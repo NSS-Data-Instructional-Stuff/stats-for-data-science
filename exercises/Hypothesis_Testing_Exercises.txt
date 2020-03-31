@@ -1,0 +1,29 @@
+#################################
+# Crashes on Weekend vs Weekday #
+#################################
+
+We are interested in studying the difference between weekends and weekdays in terms of number of reported crashes in Davidson County. We speculate that there are a larger number of reported crashes on average on weekdays as opposed to weekends.
+
+The file crashes.csv contains a random sample of 65 randomly selected days.
+
+1. Look at the distribution of Accident_Number for weekends vs non-weekends. Do this distributions appear to be approximately normal?
+
+2. What are your null and alternative hypotheses?
+
+3. What is the observed difference in the average number of crashes on weekends vs. weekdays?
+
+4. Conduct a t-test to test your hypotheses.
+
+5. What p-value did you get?
+
+6. State your conclusion.
+
+====================================================
+
+Both regualar hypothesis testing and permutation testing:
+Means:
+NHANES - blood pressure and adding salt (measure effect size here, too, to show statistical significance, but not necessarily practical significance)
+
+Proportions:
+Cleaned crash data - are hit and runs more likely at night? Also, are hit and runs more likely in good weather (clear or cloudy) compared to when it is raining?
+
