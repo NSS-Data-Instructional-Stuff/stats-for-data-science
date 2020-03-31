@@ -18,6 +18,26 @@ The file crashes.csv contains a random sample of 65 randomly selected days.
 
 6. State your conclusion.
 
+
+###########################
+# Late Night Hit and Runs #
+###########################
+You speculate that crashes ocurring late at night are more likely to happen late at night. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
+
+The file hit_and_run.csv contains a random sample of 50 car crashes that took place in Davidson County.
+
+1. Find the proportion of hit and run crashes for both late at night and not late at night. What is the observed difference between these two?
+
+2. State the null and alternative hypothesis.
+
+3. Conduct a z-test to test your hypothesis.
+
+4. What p-value did you get?
+
+5. State your conclusion.
+
+
+
 ====================================================
 
 Both regualar hypothesis testing and permutation testing:
