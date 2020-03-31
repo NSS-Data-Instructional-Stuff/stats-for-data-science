@@ -5,7 +5,13 @@ The file residential_permits.csv contains data on the wait time for new resident
 
 Let's say that you own Beazer Homes Corporation and suspect that your competitor, Legacy South Builders, LLC is getting their permits issued quicker than you are.
 
-Determine if you have a legitimate complaint. Run a t-test and report your findings.
+In this exercise, we will determine if you have a legitimate complaint.
+
+1. Look at the distribution of wait times for both Beazer Homes Corporation (Contact == 'BEAZER HOMES CORP') and for Legacy South Builders (Contact == 'LEGACY SOUTH BUILDERS LLC'). Do these distributions appear to be approximately normal?
+
+2. Conduct a permutation test, looking at the difference between average wait times for Beazer Homes and Legacy South. What p-value do you obtain?
+
+3. Based on this p-value, what is your conclusion?
 
 #################################
 # Crashes on Weekend vs Weekday #
