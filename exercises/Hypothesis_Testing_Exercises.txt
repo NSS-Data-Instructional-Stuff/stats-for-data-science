@@ -1,3 +1,12 @@
+#####################
+# Permits Wait Time #
+#####################
+The file residential_permits.csv contains data on the wait time for new residential construction permits issued in Nashville.
+
+Let's say that you own Beazer Homes Corporation and notice that, on average you have to wait 15.3 days for a permit to be issued for a new single-family residence. However, your rival, Legacy South Builders, LLC is only waiting on average 12.5 days for a permit to be issued.
+
+You want to determine if you have a legitimate complaint or if this difference can be explained by random chance. Run a t-test and report your findings.
+
 #################################
 # Crashes on Weekend vs Weekday #
 #################################
