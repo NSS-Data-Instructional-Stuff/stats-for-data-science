@@ -22,7 +22,7 @@ The file crashes.csv contains a random sample of 65 randomly selected days.
 ###########################
 # Late Night Hit and Runs #
 ###########################
-You speculate that crashes ocurring late at night are more likely to happen late at night. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
+You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
 
 The file hit_and_run.csv contains a random sample of 50 car crashes that took place in Davidson County.
 
