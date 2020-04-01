@@ -1,0 +1,29 @@
+#########################
+# Binomial Distribution #
+#########################
+According to Forbes (https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10), 78% of American workers live paycheck-to-paycheck.
+
+Let's say we take a random sample of 40 American workers.
+
+1) What is the probability that fewer that 25 people in our sample are living paycheck-to-paycheck?
+
+2) What is the probability that between 25 and 35 people (inclusive) in our sample are living paycheck-to-paycheck?
+
+3) What is the probability that at least 35 people in our sample are living paycheck-to-paycheck?
+
+
+########################################
+# Poisson and Exponential Distribution #
+########################################
+In March of 2019, the Metro Nashville Police Department received an average of 1.75 911 calls per minute.
+Let's approximate the number of calls received in an hour by using a Poisson distribution with mean 1.75.
+
+1) What is the probability of received zero calls in a minute?
+2) How likely is is to receive at least 5 calls in a minute?
+3) How likely is is to receive at least 8 calls in a minute?
+4) How likely is it to receive between 3 and 5 calls in a minute, inclusive?
+5) How likely is it to have to wait at least two minutes between calls?
+6) How likely is it to have to wait at least five minutes between calls?
+7) How likely is it to have to wait less than 20 seconds between calls?
+
+
