@@ -26,4 +26,6 @@ Let's approximate the number of calls received in an hour by using a Poisson dis
 6) How likely is it to have to wait at least five minutes between calls?
 7) How likely is it to have to wait less than 20 seconds between calls?
 
+Compare the real data to the theoretical distribution. Comment on how good of an approximation it is.
+
 
