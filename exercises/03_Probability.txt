@@ -14,6 +14,13 @@ Let's say we take a random sample of 40 American workers.
 #######################
 # Normal Distribution #
 #######################
+The file nhanes_pulse_sample.csv contains a sample of 100 men between the ages of 30 and 40 from the 2015 National Health and Nutrition Examination Survey.
+
+1) Plot the histogram and Q-Q plot for the pulse rate from this sample. Does it appear that pulse rates are normally distributed?
+2) Use a normal approximation to answer the following questions:
+  a) Approximately what  proportion of men between the age of 30 and 40 will have a pulse less than 60?
+  b) Approximately what proportion of men between the age of 30 and 40 will have a pulse greater than 100?
+
 
 The file av_2017_sample.csv includes the appraised values for 1000 Davidson County homes in 2017.
 1) Plot a histogram and Q-Q plot for the appraisal values. Does the distribution of the appraisal values appear to be approximately normal?
