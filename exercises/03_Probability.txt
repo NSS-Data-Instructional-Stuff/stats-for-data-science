@@ -11,6 +11,14 @@ Let's say we take a random sample of 40 American workers.
 
 3) What is the probability that at least 35 people in our sample are living paycheck-to-paycheck?
 
+#######################
+# Normal Distribution #
+#######################
+
+The file av_2017_sample.csv includes the appraised values for 1000 Davidson County homes in 2017.
+1) Plot a histogram and Q-Q plot for the appraisal values. Does the distribution of the appraisal values appear to be approximately normal?
+2) Apply a transformation to the appraisal values and then repeat the above step.
+3) Use what you have found to approximate the proportion of total houses in Davidson County with appraisal value at least $1,000,000.
 
 ########################################
 # Poisson and Exponential Distribution #
