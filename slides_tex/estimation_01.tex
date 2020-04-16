@@ -234,4 +234,40 @@ We can see that at this sample size, there is not a lot of variance at all in th
 This can give us a pretty good idea of how far off our estimate is likely to be if we use the sample mean. (Insert widget demo here)
 \end{frame}
 
+\begin{frame}
+\frametitle{Confidence Intervals}
+So the widget shows us that if we know what the sampling distribution of the mean (or whatever parameter we are interested in) looks like, we can use this to construct our confidence interval. \p
+\vspace{0.2in}
+
+\textbf{Central Limit Theorem:} For the random variable $\bar{x}$, the sample mean of a random sample of size $n$ from a given population having mean $\mu$ and standard deviation $\sigma$, if $n$ is sufficiently large, then the distribution of $\bar{x}$ is approximately normal with mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
+\vspace{0.2in}
+
+Thus, $\frac{\bar{x} - \mu}{\sigma / \sqrt{n}}$ approximately follows a standard normal distribution.
+\end{frame}
+
+\begin{frame}
+\frametitle{Confidence Intervals}
+There is a problem with using the Central Limit Theorem. In order to use it to construct a confidence interval, we need to know $\frac{\sigma}{\sqrt{n}}$. But if we don't know the population mean $\mu$, why would we know the population standard deviation $\sigma$. The best we could do would be to approximate it with the sample standard deviation, $s$. 
+\vspace{0.2in}
+
+\textbf{Fact:} If either the population is normally distributed or we have a large enough sample (usually 30 will do), then 
+$$\frac{\bar{x} - \mu}{s / \sqrt{n}}$$
+follows a Student's $t$-distribution with $n-1$ degrees of freedom.
+\end{frame}
+
+\begin{frame}
+\frametitle{Confidence Intervals}
+The family of Student's $t$-distribution is a family of symmetric, bell-shaped distributions, which are similar to normal distributions, but have wider tails. That is, more extreme observations are more common.
+\vspace{0.2in}
+\end{frame}
+
+\begin{frame}
+\frametitle{Confidence Interval}
+\textbf{Big Idea:} If we want a 95\% confidence interval, we just need to find the distance $t_{0.025}$ from the center of the $t$ distribution with $n-1$ degrees of freedom to the point where the area to the right is $0.025$. O\vspace{0.1in}
+
+Once we know $t_{0.25}$, we can get the margin of error by multiplying by the standard deviation of the sampling distribution, $\frac{\sigma}{\sqrt{n}}$. This means that our confidence interval is
+$$\bar{x} \pm t_{0.25}\cdot\frac{\sigma}{\sqrt{n}}$$
+
+Now, we'll see how to do this in Python.
+\end{frame}
 \end{document}
