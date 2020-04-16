@@ -1,0 +1,69 @@
+\documentclass[11pt, table]{beamer}
+%\usepackage[table,x11names]{xcolor}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{multirow}
+%\usepackage{calc}
+%\usepackage{array}
+\usepackage{graphicx}
+%\usepackage{multirow}
+
+\newcommand{\p}{\pause}
+
+
+\usetheme{default}
+
+\newcommand\MyBox[2]{
+	\fbox{\lower0.75cm
+		\vbox to 1.7cm{\vfil
+			\hbox to 1.7cm{\hfil\parbox{1.4cm}{#1\\#2}\hfil}
+			\vfil}%
+	}%
+}
+
+\begin{document}
+	\title{Estimation, Part 2:\newline The Bootstrap}
+	\date{}
+	\begin{frame}[plain]
+	\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Confidence Intervals}
+We saw in the last set of slides that we could construct confidence intervals by knowing something about how the sampling distribution of the parameter that we care about is distributed.
+\vspace{0.2in}
+
+In certain cases (we saw specifically for the case of a mean), that we can know analytically the sampling distribution. (Eg. $\frac{\bar{x} - \mu}{s / \sqrt{n}}$ follows a $t$-distribution).
+\vspace{0.2in}
+
+\textbf{Problem:} These relied on certain assumptions (population approximately normal, large enough sample size), or relied on us only wanting to estimate particular parameters. Otherwise, our conclusions about the sampling distributions might not hold.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+\textbf{Big Idea:} Rather than analytically trying to determine what the sampling distribution is, we can just approximate it.
+\vspace{0.2in}
+
+We take a sample, and this gives us an approximation of the probability distribution function (pdf) for the population. We can then draw samples from this (by resampling with replacement from our sample), and look at how the relevant sample statistics are distributed.
+\vspace{0.2in}
+
+Once we have a good idea about the sampling distribution, we can use this to construct our confidence interval.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+(After widget demonstration)
+
+General recipe for a 95\% confidence interval:
+\begin{enumerate}
+	\item Take a sample of size $n$ from the population.
+	\item Find the statistic of interest for this sample.
+	\item Draw a large number (say, 10,000) of samples, with replacement, of size $n$ from the original sample.
+	\item For each sample, calculate the statistic of interest. 
+	\item Find the 2.5th and 97.5th percentile, $a$ and $b$ of the calculated statistics.
+	\item The 95\% bootstrap confidence interval is
+$$[m - (b - m), m + (m - b)]$$
+\end{enumerate}
+\end{frame}
+
+\end{document}
