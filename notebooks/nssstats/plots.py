@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import statsmodels.api as sm
 
 def range_plot(x, **kwargs):
     center = np.mean([np.min(x), np.max(x)])
@@ -65,3 +66,9 @@ def iqr_plot(x, **kwargs):
     plt.plot([uq, uq], [y+.02*y_range, y+.08*y_range], linewidth = 3, color = 'black')
 
     plt.ylim(-.22*y_range, y + 0.15*y_range);
+
+def qq_plot(data):
+    mu = np.mean(data)
+    sigma = np.std(data)
+    
+    sm.qqplot(data, line='45', loc = mu, scale = sigma);
