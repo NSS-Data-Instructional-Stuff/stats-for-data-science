@@ -271,4 +271,20 @@ $$\bar{x} \pm t_{0.25}\cdot\frac{\sigma}{\sqrt{n}}$$
 
 Now, we'll see how to do this in Python.
 \end{frame}
+
+\begin{frame}
+\frametitle{Confidence Intervals for the Proportion}
+We can also construct confidence intervals for the population proportion.
+\vspace{0.1in}
+
+Let $\hat{p}$ be the sample proportion and $p$ be the population proportion.
+\vspace{0.1in}
+
+Fact: The sampling distribution of the proportion is approximately normal with mean equal to the population mean and standard deviation $\sqrt{\frac{p(1-p)}{n}}$ (which we can approximate with $\sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$).
+\vspace{0.1in}
+
+Thus, $\frac{\hat{p} - p}{\sqrt{\hat{p}(1 - \hat{p}) / n}}$ approximately follows the standard normal distribution.
+
+\end{frame}
+
 \end{document}
