@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+from scipy.stats import t
+from scipy.stats import ttest_1samp
+from scipy.stats import ttest_ind
 
 def range_plot(x, **kwargs):
     center = np.mean([np.min(x), np.max(x)])
@@ -72,3 +75,193 @@ def qq_plot(data):
     sigma = np.std(data)
     
     sm.qqplot(data, line='45', loc = mu, scale = sigma);
+
+def hypot_plot_mean(data, popmean, type = 'both', area = True):
+    
+    df = len(data) - 1
+    
+    test_stat, p = ttest_1samp(data, popmean = popmean)
+    
+    if type != 'both':
+        p = p/2
+    
+    p = round(p,4)
+    
+    x_min = min(-np.abs(test_stat) - 0.25, -3)
+    x_max = max(np.abs(test_stat) + 0.25, 3)
+    
+    
+    x = np.linspace(x_min, x_max, 100)
+    
+    fig, ax = plt.subplots(1, 1, figsize = (8,4))
+    ax.plot(x, t.pdf(x, df = df),'r-', lw=3, alpha=1, label='norm pdf', color = 'black')
+    
+    if type == 'both':
+        left_section = np.linspace(x_min, -np.abs(test_stat), 100)
+        right_section = np.linspace(np.abs(test_stat), x_max, 100)
+        sections = [left_section, right_section]
+        edges = [-np.abs(test_stat), np.abs(test_stat)]
+        
+    elif type == 'left':
+        left_section = np.linspace(x_min, test_stat, 100)
+        sections = [left_section]
+        edges = [test_stat]
+
+    elif type == 'right':
+        right_section = np.linspace(test_stat, x_max, 100)
+        sections = [right_section]
+        edges = [test_stat]
+    
+    if area:
+        for section in sections:
+            plt.fill_between(section, t.pdf(section, df = df), color = 'red')
+    for edge in edges:
+        plt.vlines(x = edge, ymin =0, ymax = t.pdf(edge, df = df), lw = 3, color = 'black')
+        plt.annotate(s = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
+                     va = 'top', ha = 'center')
+        
+    plt.annotate(s = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
+             xy = (test_stat, -.05), xytext = (test_stat, -.1), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
+    
+    if area:
+        area = p
+        if type == 'both':
+            #area = round(2*t.cdf(-np.abs(test_stat), df = n-1), 4)
+
+            test_stat = np.abs(test_stat)
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
+                    xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = (-test_stat + 0.1, t.pdf(test_stat, df = df)/2),
+                    xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+
+        if type == 'right':
+            #area = round(t.cdf(-test_stat, df = n-1), 4)
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
+                    xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+
+        if type == 'left':
+            #area = round(t.cdf(test_stat, df = n-1), 4)
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.01),
+                    xytext = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+    
+    
+    plt.hlines(y = 0, xmin = min(-3, -np.abs(test_stat + 0.25)), xmax = max(3, np.abs(test_stat + .25)))
+    plt.yticks([])
+    plt.xticks([])
+    plt.annotate(s = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
+                 va = 'top', ha = 'center')  
+       
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['bottom'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    plt.ylim(plt.ylim()[0] - .05, plt.ylim()[1])
+    plt.tight_layout()
+    plt.title('Sampling Distribution of the $\\frac{\\bar{x} - \\mu}{s}$, Assuming $H_0$', fontsize = 14);
+
+def hypot_plot_mean_2sample(data1, data2, type = 'both', area = True):
+    
+    df = min(len(data1) - 1, len(data2) -1)
+    
+    test_stat, p = ttest_ind(data1, data2, equal_var = False)
+    
+    if type != 'both':
+        p = p/2
+    
+    p = round(p,4)
+    
+    x_min = min(-np.abs(test_stat) - 0.25, -3)
+    x_max = max(np.abs(test_stat) + 0.25, 3)
+    
+    
+    x = np.linspace(x_min, x_max, 100)
+    
+    fig, ax = plt.subplots(1, 1, figsize = (8,4))
+    ax.plot(x, t.pdf(x, df = df),'r-', lw=3, alpha=1, label='norm pdf', color = 'black')
+    
+    if type == 'both':
+        left_section = np.linspace(x_min, -np.abs(test_stat), 100)
+        right_section = np.linspace(np.abs(test_stat), x_max, 100)
+        sections = [left_section, right_section]
+        edges = [-np.abs(test_stat), np.abs(test_stat)]
+        
+    elif type == 'left':
+        left_section = np.linspace(x_min, test_stat, 100)
+        sections = [left_section]
+        edges = [test_stat]
+
+    elif type == 'right':
+        right_section = np.linspace(test_stat, x_max, 100)
+        sections = [right_section]
+        edges = [test_stat]
+    
+    if area:
+        for section in sections:
+            plt.fill_between(section, t.pdf(section, df = df), color = 'red')
+    for edge in edges:
+        plt.vlines(x = edge, ymin =0, ymax = t.pdf(edge, df = df), lw = 3, color = 'black')
+        plt.annotate(s = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
+                     va = 'top', ha = 'center')
+        
+    plt.annotate(s = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
+             xy = (test_stat, -.05), xytext = (test_stat, -.1), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
+    
+    if area:
+        area = p
+        if type == 'both':
+            #area = round(2*t.cdf(-np.abs(test_stat), df = n-1), 4)
+
+            test_stat = np.abs(test_stat)
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
+                    xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = (-test_stat + 0.1, t.pdf(test_stat, df = df)/2),
+                    xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+
+        if type == 'right':
+            #area = round(t.cdf(-test_stat, df = n-1), 4)
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
+                    xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+
+        if type == 'left':
+            #area = round(t.cdf(test_stat, df = n-1), 4)
+
+            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+                    xy = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.01),
+                    xytext = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.2),
+                    arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
+    
+    
+    plt.hlines(y = 0, xmin = min(-3, -np.abs(test_stat + 0.25)), xmax = max(3, np.abs(test_stat + .25)))
+    plt.yticks([])
+    plt.xticks([])
+    plt.annotate(s = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
+                 va = 'top', ha = 'center')  
+       
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['bottom'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    plt.ylim(plt.ylim()[0] - .05, plt.ylim()[1])
+    plt.tight_layout()
+    plt.title('Sampling Distribution of the $\\frac{\\bar{x}_1 - \\bar{x}_2}{s}$, Assuming $H_0$', fontsize = 14);
