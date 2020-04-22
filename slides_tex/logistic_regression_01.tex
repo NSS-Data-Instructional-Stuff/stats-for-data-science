@@ -91,7 +91,7 @@ So how do we create our model? We can try using a linear regression model.\p
 \vspace{0.1in}
 
 A linear regression model produces the following result:
-$$\text{P(carrier)} = 0.00426\cdot(\text{LD}) - 0.4829$$
+$$\text{P(carrier)} = 0.00423\cdot(\text{LD}) - 0.4757$$
 
 \begin{center}
 	\includegraphics[width = 3in]{images/Dystrophy/scatter_02.png}
@@ -134,7 +134,8 @@ $$\text{P(carrier)} = \frac{1}{1 + e^{-(\beta_1\cdot(\text{LD}) + \beta_0)}}$$
 \begin{frame}
 \frametitle{Logistic Regression}
 Fitting this model, we obtain
-$$\text{P(carrier)} = \frac{1}{1 + e^{-(0.02905\cdot(\text{LD}) - 6.407)}}$$
+$$\text{P(carrier)} = \frac{1}{1 + e^{-(0.0279\cdot(\text{LD}) - 6.1492)}}$$
+And here are those probabilities plotted against the test set:
 \begin{center}
 	\includegraphics[width = 3in]{images/Dystrophy/scatter_03.png}
 \end{center}
@@ -165,7 +166,7 @@ Ideally, the plotted points should fall close to the line $y = x$ (because predi
 	\includegraphics[width=3in]{images/Dystrophy/calib_01.png}
 \end{center}
 
-It appears that our model is pretty well calibrated. Most of the plotted points lie close to the line $y = x$, and the confidence intervals intersect the line.
+The model is decently calibrated. All of our confidence intervals intersect the line $y=x$, but the second and third point estimates are a bit low. Also, we have a smallish sample size, so we need to be cautious. 
 \end{frame}
 
 \begin{frame}
@@ -210,13 +211,13 @@ This area is the same as the probability that, given a random positive and a ran
 	\includegraphics[width = 2.5in]{images/Dystrophy/roc_02.png}
 \end{center}
 
-Here, the area under the curve is 0.8612.
+Here, the area under the curve is 0.8539.
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Logistic Regression}
-The last thing to do is to assign predictions based on probabilities. The normal convention would be to predict that anyone with a predicted probability greater than 0.5 is a carrier and everyone else as a non-carrier. If we do this, we get the following results:
+The last thing to do is to assign predictions based on probabilities. The normal convention would be to predict that anyone with a predicted probability greater than 0.5 is a carrier and everyone else as a non-carrier. If we do this, we get the following results on the test set:
 
 \begin{center}
 	\includegraphics[width = 3in]{images/Dystrophy/scatter_04.png}
@@ -252,7 +253,7 @@ $$P(carrier) = \frac{1}{1 + e^{-(\beta_0 + \beta_1\cdot(\text{CK}) + \beta_2\cdo
 \frametitle{Logistic Regression}
 After fitting the model, we get
 
-$$P(carrier) = \frac{1}{1 + e^{-(-16.766 + 0.0481(\text{CK}) + 0.1038(\text{H}) + 0.0990(\text{PK}) + 0.0138(\text{LD}))}}$$
+$$P(carrier) = \frac{1}{1 + e^{-(-17.2254 + 0.0446(\text{CK}) + 0.1163(\text{H}) + 0.0875(\text{PK}) + 0.0122(\text{LD}))}}$$
 \end{frame}
 
 \begin{frame}
@@ -272,7 +273,7 @@ $$P(carrier) = \frac{1}{1 + e^{-(-16.766 + 0.0481(\text{CK}) + 0.1038(\text{H}) 
 	\includegraphics[width=2.5in]{images/Dystrophy/roc_04.png}
 \end{center}
 
-This time, the area under the curve is 0.9452.
+This time, the area under the curve is 0.9430.
 \end{frame}
 
 \begin{frame}
