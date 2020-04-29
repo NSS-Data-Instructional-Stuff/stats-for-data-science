@@ -48,5 +48,6 @@ def permutation_test_plot(permutation_differences, observed_difference, alternat
     plt.annotate(s = 'Observed\n Difference', xy = (observed_difference, 0), 
                  xytext = (observed_difference,-0.12*ymax), ha = 'center', va = 'top',
                  arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
+    plt.yticks([x for x in plt.yticks()[0] if x >= 0])
     plt.ylim(-0.25*ymax, ymax)
     plt.title('Distribution of Permutation Statistics');
