@@ -1,0 +1,29 @@
+The file bikes.csv contains a cleaned version of the dataset available at https://www.kaggle.com/marklvl/bike-sharing-dataset. It contains a two-year historical log of bike rentals from the Capital Bikeshare system in Washington, D.C.
+
+Your task in this exercise is to learn how the number of rentals on a given day (cnt) is related to environmental and seasonal factors.
+
+The columns for this dataset are as follows:
+dteday: record's date
+season: the season
+mnth: the month 
+holiday: whether the day was a holiday or not 
+weekday: day of the week
+temp: temperature in Fahrenheit
+atemp: "Feels like" temperature in Fahrenheit
+hum: humidity
+windspeed: wind speed
+rentals: count of total rental bikes (our target variable)
+
+1) Create boxplots of rentals vs. season, rentals vs. mnth, rentals vs. holiday, and rentals vs. weekday. Do you notice any trends?
+
+2) Create scatterplots of rentals vs. temp, rentals vs. atemp, rentals vs. hum, and rentals vs. windspeed. Do you notice any trends.
+
+3) Create a linear regression model to predict rentals based on all other features (besides dteday). Note that you do you need to dummyize the categorical predictors (season, mnth, holiday, and weekday) prior to modeling. Also, make sure to do a train/test split prior to fitting your model so that we have a test set on which to evaluate.
+
+4) What coefficient do you get for temp? Explain, in English, the meaning of this coefficient. Does this make sense considering the scatterplot you created earlier?
+
+5) What coefficients do you get for the season variables? Explain, in English, the meaning of these coefficients. Do they make sense, give the boxplots you created earlier?
+
+6) Calculate both the R2 score and the mean absolute error on the test set. Explain, in English, what these metrics are telling you about your model.
+
+7) What potential problems do you see in regard to interpreting the coefficients you got?
