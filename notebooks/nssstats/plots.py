@@ -364,3 +364,43 @@ def hypot_plot_proportion_2sample(counts, nobs, alternative = 'two-sided', area 
     plt.ylim(plt.ylim()[0] - .05, plt.ylim()[1])
     plt.tight_layout()
     plt.title('Sampling Distribution of the $\\frac{\\bar{p}_1 - \\bar{p}_2}{s_p}$, Assuming $H_0$', fontsize = 14);
+
+def deviation_plot(Player, df):
+    
+    i = df.player.tolist().index(Player)
+    
+    salary = df.loc[i,'salary']
+    mean = df['salary'].mean()
+
+    print('Player: {}'.format(df.loc[i, 'player']))
+    print('Salary: ${:,}'.format(df.loc[i, 'salary']))
+    print('Mean Salary: ${:,}'.format(int(mean)))
+    
+    fig, ax = plt.subplots(figsize = (10,3))
+    plt.scatter(df['salary'], [0 + 0.015]*len(df['salary']), edgecolor = 'black', s = 100)
+    xmin, xmax = plt.xlim()
+    
+    plt.scatter([salary], [0 + 0.015], edgecolor = 'black', color = 'orange', s = 100)
+    plt.annotate(s = 'Mean ($\mu$) \n \${:,}'.format(int(mean)), ha = 'center', va = 'top', fontweight = 'bold', fontsize = 12,
+                 xy = (df['salary'].mean(), -.01), xytext = (df['salary'].mean(), -.06),
+                 arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
+
+    lineheight = 0.1
+    
+    plt.plot([mean, salary], [lineheight,lineheight], color = 'black', linewidth = 3)
+    for x in [mean, salary]:
+        plt.plot([x,x], [lineheight - 0.01, lineheight + 0.01], color = 'black', linewidth = 3)
+
+    plt.annotate(s = '$x_i$ = \${:,}'.format(salary), xy = (salary, 0.035), fontsize = 14, fontweight = 'bold',
+                ha = 'center', va = 'bottom')
+        
+    plt.annotate(s = '$x_i - \mu =$ \${:,}'.format(int(salary - mean)),
+                 xy = ((mean + salary) / 2, lineheight + 0.025),
+                 fontsize = 14, fontweight = 'bold', ha = 'center', va = 'bottom', color = 'red')
+
+    xmin -= 4000000
+    xmax += 4000000
+    plt.hlines(y = 0, xmin = xmin, xmax = xmax)
+    plt.xlim(xmin, xmax)
+    plt.ylim(-0.15, 0.2)
+    plt.yticks([]);
