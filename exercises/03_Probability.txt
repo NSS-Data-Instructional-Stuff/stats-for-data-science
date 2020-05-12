@@ -5,7 +5,7 @@ According to Forbes (https://www.forbes.com/sites/zackfriedman/2019/01/11/live-p
 
 Let's say we take a random sample of 40 American workers.
 
-1) What is the probability that fewer that 25 people in our sample are living paycheck-to-paycheck?
+1) What is the probability that fewer than 25 people in our sample are living paycheck-to-paycheck?
 
 2) What is the probability that between 25 and 35 people (inclusive) in our sample are living paycheck-to-paycheck?
 
