@@ -31,7 +31,7 @@ The file av_2017_sample.csv includes the appraised values for 1000 Davidson Coun
 # Poisson and Exponential Distribution #
 ########################################
 In March of 2019, the Metro Nashville Police Department received an average of 1.75 911 calls per minute.
-Let's approximate the number of calls received in an hour by using a Poisson distribution with mean 1.75.
+Let's approximate the number of calls received in a minute by using a Poisson distribution with mean 1.75.
 
 1) What is the probability of received zero calls in a minute?
 2) How likely is is to receive at least 5 calls in a minute?
