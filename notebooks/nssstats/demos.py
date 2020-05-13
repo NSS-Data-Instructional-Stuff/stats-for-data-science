@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.stats import norm, binom
+from scipy.stats import norm, binom, poisson
 from scipy.stats import skewnorm
 
 def binom_normal_plot(n, p):
@@ -17,6 +17,41 @@ def binom_normal_plot(n, p):
     plt.plot(x_norm, y_norm, linewidth = 3, color = 'red', label = 'Normal Distribution')
     plt.legend()
     plt.xlim(xmin, xmax);
+
+def poisson_pmf_plot(rate = 8):
+    fig, ax = plt.subplots(figsize = (10,5))
+    x = np.arange(0, 25)
+    y = poisson.pmf(x, mu = rate)
+    
+    plt.bar(x, y)
+    plt.ylim(0, 0.3)
+    plt.title('Poisson Distribution, Rate = {}'.format(rate))
+    plt.ylabel('density')
+    plt.xticks(x)
+
+def binom_poisson(n, show_probabilities = False):
+    successes = 8 
+    
+    x_binom = np.arange(0, min(n + 1, 25))
+    y_binom = binom.pmf(x_binom, p = successes/n, n = n)
+    
+    x_poisson = np.arange(0, 25)
+    y_poisson = poisson.pmf(x_poisson, mu = successes)
+
+    fig, ax = plt.subplots(nrows = 2, ncols=1, figsize = (10,6), sharey = True, sharex = True)
+    ax[0].bar(x_binom, y_binom)
+    ax[0].set_title('Binomial Distribution, {} Trials, p = {} / {} = {}'.format(n, successes, n, round(successes/n, 4)))
+    
+    
+    ax[1].bar(x_poisson, y_poisson)
+    ax[1].set_title('Poisson Distribution, rate = {}'.format(successes))
+    
+    if show_probabilities:
+        for x, y in zip(x_binom, y_binom):
+            ax[0].annotate(s = str(round(y,4)), xy = (x,0.01), rotation = 90, ha = 'center', va = 'bottom')
+
+        for x, y in zip(x_poisson, y_poisson):
+            ax[1].annotate(s = str(round(y,4)), xy = (x,0.01), rotation = 90, ha = 'center', va = 'bottom');
 
 def confidence_interval_plot(area = 0.95, sample_mean = 0):
     x = np.linspace(norm.ppf(0.001), norm.ppf(0.999), 100)
