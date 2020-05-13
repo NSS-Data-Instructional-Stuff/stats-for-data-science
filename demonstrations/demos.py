@@ -1,7 +1,22 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.stats import norm
+from scipy.stats import norm, binom
 from scipy.stats import skewnorm
+
+def binom_normal_plot(n, p):
+    x_binom = np.arange(start = 0, stop = n+1)
+    y_binom = binom.pmf(k = x_binom, n = n, p = p) 
+    
+    x_norm = np.linspace(-1, n+1, num = 200)
+    y_norm = norm.pdf(x_norm, loc = n*p, scale = np.sqrt(n*p*(1-p)))
+    
+    fig, ax = plt.subplots(figsize = (8,6))
+    
+    plt.bar(x_binom, y_binom, label = 'Binomial Distribution')
+    xmin, xmax = plt.xlim()
+    plt.plot(x_norm, y_norm, linewidth = 3, color = 'red', label = 'Normal Distribution')
+    plt.legend()
+    plt.xlim(xmin, xmax);
 
 def confidence_interval_plot(area = 0.95, sample_mean = 0):
     x = np.linspace(norm.ppf(0.001), norm.ppf(0.999), 100)
