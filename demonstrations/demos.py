@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.stats import norm, binom
+from scipy.stats import norm, binom, poisson
 from scipy.stats import skewnorm
 
 def binom_normal_plot(n, p):
@@ -17,6 +17,41 @@ def binom_normal_plot(n, p):
     plt.plot(x_norm, y_norm, linewidth = 3, color = 'red', label = 'Normal Distribution')
     plt.legend()
     plt.xlim(xmin, xmax);
+
+def poisson_pmf_plot(rate = 8):
+    fig, ax = plt.subplots(figsize = (10,5))
+    x = np.arange(0, 25)
+    y = poisson.pmf(x, mu = rate)
+    
+    plt.bar(x, y)
+    plt.ylim(0, 0.3)
+    plt.title('Poisson Distribution, Rate = {}'.format(rate))
+    plt.ylabel('density')
+    plt.xticks(x)
+
+def binom_poisson(n, show_probabilities = False):
+    successes = 8 
+    
+    x_binom = np.arange(0, min(n + 1, 25))
+    y_binom = binom.pmf(x_binom, p = successes/n, n = n)
+    
+    x_poisson = np.arange(0, 25)
+    y_poisson = poisson.pmf(x_poisson, mu = successes)
+
+    fig, ax = plt.subplots(nrows = 2, ncols=1, figsize = (10,6), sharey = True, sharex = True)
+    ax[0].bar(x_binom, y_binom)
+    ax[0].set_title('Binomial Distribution, {} Trials, p = {} / {} = {}'.format(n, successes, n, round(successes/n, 4)))
+    
+    
+    ax[1].bar(x_poisson, y_poisson)
+    ax[1].set_title('Poisson Distribution, rate = {}'.format(successes))
+    
+    if show_probabilities:
+        for x, y in zip(x_binom, y_binom):
+            ax[0].annotate(s = str(round(y,4)), xy = (x,0.01), rotation = 90, ha = 'center', va = 'bottom')
+
+        for x, y in zip(x_poisson, y_poisson):
+            ax[1].annotate(s = str(round(y,4)), xy = (x,0.01), rotation = 90, ha = 'center', va = 'bottom');
 
 def confidence_interval_plot(area = 0.95, sample_mean = 0):
     x = np.linspace(norm.ppf(0.001), norm.ppf(0.999), 100)
@@ -35,27 +70,27 @@ def confidence_interval_plot(area = 0.95, sample_mean = 0):
     if x_min != -3:
         plt.vlines(x = x_min, ymin = 0, ymax = norm.pdf(x_min), lw = 3, color = 'black')
         #plt.xticks(ticks = [x_min], labels = [f'z = {x_min}'], fontsize = 14)
-        plt.annotate(s = f'{round(x_min,2)}', xy = (x_min, -0.01), fontsize = 14, fontweight = 'bold', 
+        plt.annotate(s = 'a', xy = (x_min, -0.01), fontsize = 14, fontweight = 'bold', 
                      va = 'top', ha = 'center', color = 'orangered')
     if x_max != 3:
         plt.vlines(x = x_max, ymin = 0, ymax = norm.pdf(x_max), lw = 3, color = 'black')
         #plt.xticks(ticks = [x_max], labels = [f'z = {x_max}'], fontsize = 14)
-        plt.annotate(s = f'{round(x_max,2)}', xy = (x_max, -0.01), fontsize = 14, fontweight = 'bold', 
+        plt.annotate(s = 'b', xy = (x_max, -0.01), fontsize = 14, fontweight = 'bold', 
                      va = 'top', ha = 'center', color = 'orangered')
         
     plt.annotate(s = f'Area = {area}', xy = (0, 0.01), fontsize = 14,
                 va = 'bottom', ha = 'center', fontweight = 'bold', color = 'yellow')
-    if True:
-        plt.plot([sample_mean + x_min, sample_mean - 0.2], [-0.1, -0.1], lw = 3, color = 'red')
-        plt.plot([sample_mean + 0.2, sample_mean + x_max], [-0.1, -0.1], lw = 3, color = 'red')
-        plt.plot([sample_mean + x_min, sample_mean + x_min], [-0.09, -0.11], lw = 3, color = 'red')
-        plt.plot([sample_mean + x_max, sample_mean + x_max], [-0.09, -0.11], lw = 3, color = 'red')
-        plt.plot([sample_mean, sample_mean], [0, -0.06], lw = 3, linestyle = '-', color = 'black')
-        plt.annotate(s = '$\\overline{x}$', xy = (sample_mean, -0.1), 
-                     va = 'center', ha = 'center',
-                     fontsize = 14, fontweight = 'bold')
-        plt.annotate(s = r'0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
-                     va = 'top', ha = 'center', color = 'orangered')
+
+    plt.plot([sample_mean + x_min, sample_mean - 0.2], [-0.1, -0.1], lw = 3, color = 'red')
+    plt.plot([sample_mean + 0.2, sample_mean + x_max], [-0.1, -0.1], lw = 3, color = 'red')
+    plt.plot([sample_mean + x_min, sample_mean + x_min], [-0.09, -0.11], lw = 3, color = 'red')
+    plt.plot([sample_mean + x_max, sample_mean + x_max], [-0.09, -0.11], lw = 3, color = 'red')
+    plt.plot([sample_mean, sample_mean], [0, -0.06], lw = 3, linestyle = '-', color = 'black')
+    plt.annotate(s = '$\\overline{x}$', xy = (sample_mean, -0.1), 
+	     va = 'center', ha = 'center',
+	     fontsize = 14, fontweight = 'bold')
+    #plt.annotate(s = r'0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
+#	     va = 'top', ha = 'center', color = 'orangered')
         
     plt.plot([0, 0], [-0.15, 0.4], linestyle = '--', color = 'black')
     plt.annotate(s = '$\mu$', xy = (0, -0.15), fontsize = 14, ha = 'center', va = 'top')
