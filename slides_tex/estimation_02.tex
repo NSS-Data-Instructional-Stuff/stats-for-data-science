@@ -41,13 +41,114 @@ In certain cases (we saw specifically for the case of a mean), that we can know 
 
 \begin{frame}
 \frametitle{The Bootstrap}
-\textbf{Big Idea:} Rather than analytically trying to determine what the sampling distribution is, we can just approximate it.
+\textbf{Big Idea:} Rather than analytically trying to determine what the sampling distribution is, we can just approximate it using our sample.
 \vspace{0.2in}
 
 We take a sample, and this gives us an approximation of the probability distribution function (pdf) for the population. We can then draw samples from this (by resampling with replacement from our sample), and look at how the relevant sample statistics are distributed.
 \vspace{0.2in}
 
 Once we have a good idea about the sampling distribution, we can use this to construct our confidence interval.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+Let's look at what this would look like in practice. We'll start by looking at our (unknown) population distribution.
+
+Let's pretend like we want to estimate the 75th percentile of the population values.
+
+ Remember that in practice we can't know what this distribution really looks like. We must try to infer it using just a sample.
+
+\begin{center}
+	\includegraphics[width=3in]{images/bootstrap/population_plot.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+Now, let's take a sample of size 50:
+
+\begin{center}
+	\includegraphics[width=3in]{images/bootstrap/sample_plot.png}
+\end{center}
+
+Based on this sample, we can get a \emph{point estimate} of the 75th percentile of the population. It is unlikely to be exactly equal to the true population parameter, and in this case our estimate is slightly too high.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+How good can we expect this estimate to be?
+\vspace{0.1in}
+
+To know that, we need to understand how much variance there will be in sample 75th percentiles over all possible samples.
+\vspace{0.1in}
+
+The problem is that we don't know what all possible samples look like. We only have our single sample.
+
+\begin{center}
+	\includegraphics[width=3in]{images/bootstrap/sample_plot_02.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+Based on this sample, what is our best estimate of the (unknown) population distribution?
+\vspace{0.1in}
+
+If we want to estimate the population distribution, we could do so by looking at the KDE of the sample:
+
+\begin{center}
+	\includegraphics[width=3in]{images/bootstrap/sample_plot_kde.png}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+If we want to estimate what possible samples from the population look like, we could estimate it by using the distribution determined by the sample:
+
+\begin{center}
+	\includegraphics[width=2.5in]{images/bootstrap/sample_kde.png}
+\end{center}
+
+This is usually done by repeatedly \emph{resampling} from our sample. That is, drawing samples of the same size from the samples \textbf{with replacement}. 
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+Let's look at how some possible resamples look and where their 75th percentile lands relative to the population 75th percentile.
+\vspace{0.1in}
+
+Here is one possible resample:
+\begin{center}
+	\includegraphics[width=2.5in]{images/bootstrap/resample_plot_01.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+And another:
+\begin{center}
+	\includegraphics[width=2.5in]{images/bootstrap/resample_plot_02.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+And another:
+\begin{center}
+	\includegraphics[width=2.5in]{images/bootstrap/resample_plot_03.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bootstrap}
+If we repeatedly draw resamples a large number of times (10,000 or so), then we can get an estimate of the sampling distribution of the 75th percentile:
+
+\begin{center}
+	\includegraphics[width=2.5in]{images/bootstrap/resample_distribution.png}
+\end{center}
+
+What we see is that most of the resample 75th percentiles are clustered close to the population 75th percentile.
 \end{frame}
 
 \begin{frame}
@@ -62,7 +163,7 @@ General recipe for a 95\% confidence interval:
 	\item For each sample, calculate the statistic of interest. 
 	\item Find the 2.5th and 97.5th percentile, $a$ and $b$ of the calculated statistics.
 	\item The 95\% bootstrap confidence interval is
-$$[m - (b - m), m + (m - b)]$$
+$$[m - (b - m), m + (m - a)]$$
 \end{enumerate}
 \end{frame}
 
