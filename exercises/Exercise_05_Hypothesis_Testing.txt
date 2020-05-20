@@ -57,6 +57,7 @@ The file nhanes_blood_pressure contains data coming from the 2013 National Healt
 * SEQN: an identifier number per participant
 * add_salt_rarely: Whether that participant indicated that they rarely added salt to their food.
 * systolic_blood_pressure: Systolic blood pressure measurement.
+* body_mass_index: Body mass index
 
 You suspect that people who rarely add salt to their food will have lower blood pressures on average than those who add it more than rarely. Let's test this claim.
 
@@ -67,3 +68,5 @@ You suspect that people who rarely add salt to their food will have lower blood 
 5. What p-value did you get?
 6. State your conclusion.
 7. Find the effect size for the difference. What does this say about the difference you found between the two groups?
+8. Find the correlation between systolic blood pressure and body mass index for your sample.
+9. Conduct a permutation test of whether there is a positive correlation between body mass index and systolic blood pressure. What p-value do you obtain? State your conclusion.
