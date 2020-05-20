@@ -22,7 +22,7 @@ The file nhanes_pulse_sample.csv contains a sample of 100 men between the ages o
   b) Approximately what proportion of men between the age of 30 and 40 will have a pulse greater than 100?
 
 
-The file av_2017_sample.csv includes the appraised values for 1000 Davidson County homes in 2017.
+The file appraisal_2017.csv includes the appraised values for 1000 Davidson County homes in 2017.
 1) Plot a histogram and Q-Q plot for the appraisal values. Does the distribution of the appraisal values appear to be approximately normal?
 2) Apply a transformation to the appraisal values and then repeat the above step.
 3) Use what you have found to approximate the proportion of total houses in Davidson County with appraisal value at least $1,000,000.
@@ -43,4 +43,6 @@ Let's approximate the number of calls received in an hour by using a Poisson dis
 
 Compare the real data to the theoretical distribution. Comment on how good of an approximation it is.
 
-
+########################
+# Placeholder Exercise #
+########################
