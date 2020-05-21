@@ -1,3 +1,7 @@
+#############################
+# Part 1: Linear Regression #
+#############################
+
 The file bikes.csv contains a cleaned version of the dataset available at https://www.kaggle.com/marklvl/bike-sharing-dataset. It contains a two-year historical log of bike rentals from the Capital Bikeshare system in Washington, D.C.
 
 Your task in this exercise is to learn how the number of rentals on a given day (cnt) is related to environmental and seasonal factors.
