@@ -9,6 +9,14 @@ def generate_permutations(values, label_count, num_permutations = 10000, statist
         
     return permutation_differences
 
+def generate_permutations_correlation(A, B, num_permutations = 10000):
+    permutation_differences = [None] * num_permutations
+    for i in range(num_permutations):
+        np.random.shuffle(B)
+        permutation_differences[i] = np.corrcoef(A, B)[0,1]
+        
+    return permutation_differences
+
 def permutation_test_p(permutation_differences, observed_difference, alternative = 'two-sided'):
     if alternative == 'larger':
         return len([x for x in permutation_differences if x >= observed_difference]) / len(permutation_differences)
