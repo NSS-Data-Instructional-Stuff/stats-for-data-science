@@ -3,7 +3,7 @@
 #########################################
 We are interested in studying the difference between weekends and weekdays in terms of number of reported crashes in Davidson County. We speculate that there are a larger number of reported crashes on average on weekdays as opposed to weekends.
 
-The file crashes.csv contains a random sample of 65 randomly selected days.
+The file crashes_sample.csv contains a random sample of 65 randomly selected days.
 
 1. Look at the distribution of Accident_Number for weekends vs non-weekends. Do this distributions appear to be approximately normal?
 
