@@ -23,7 +23,7 @@ The file crashes_sample.csv contains a random sample of 65 randomly selected day
 ###################################
 You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
 
-The file hit_and_run.csv contains a random sample of 50 car crashes that took place in Davidson County.
+The file hit_and_run_sample.csv contains a random sample of 50 car crashes that took place in Davidson County.
 
 1. Find the proportion of hit and run crashes for both late at night and not late at night. What is the observed difference between these two?
 
@@ -53,7 +53,7 @@ In this exercise, we will determine if you have a legitimate complaint.
 #################################
 # Part 4: NHANES Blood Pressure #
 #################################
-The file nhanes_blood_pressure contains data coming from the 2013 National Health and Nutrition Examination Survey. Specifically, it contains three variables:
+The file nhanes_blood_pressure.csv contains data coming from the 2013 National Health and Nutrition Examination Survey. Specifically, it contains three variables:
 * SEQN: an identifier number per participant
 * add_salt_rarely: Whether that participant indicated that they rarely added salt to their food.
 * systolic_blood_pressure: Systolic blood pressure measurement.
