@@ -7,7 +7,6 @@ from sklearn.metrics import confusion_matrix
 def cm_analysis(y_true, y_pred, labels, filename = None, ymap=None, figsize=(10,10)):
     """
     Generate matrix plot of confusion matrix with pretty annotations.
-    The plot image is saved to disk.
     args: 
       y_true:    true label of the data, with shape (nsamples,)
       y_pred:    prediction of the data, with shape (nsamples,)
@@ -19,6 +18,8 @@ def cm_analysis(y_true, y_pred, labels, filename = None, ymap=None, figsize=(10,
                  if not None, map the labels & ys to more understandable strings.
                  Caution: original y_true, y_pred and labels must align.
       figsize:   the size of the figure plotted.
+
+    Modified from https://gist.github.com/hitvoice/36cf44689065ca9b927431546381a3f7#file-plot_confusion_matrix-py
     """
     if ymap is not None:
         y_pred = [ymap[yi] for yi in y_pred]
@@ -28,7 +29,7 @@ def cm_analysis(y_true, y_pred, labels, filename = None, ymap=None, figsize=(10,
     cm_sum = np.sum(cm, axis=1, keepdims=True)
     cm_perc = cm / cm_sum.astype(float) * 100
     annot = np.empty_like(cm).astype(object)
-    annot_kws = {'fontsize': 8, 'fontweight' : 'bold'}
+    annot_kws = {'fontsize': 12, 'fontweight' : 'bold'}
     nrows, ncols = cm.shape
     for i in range(nrows):
         for j in range(ncols):
@@ -54,5 +55,3 @@ def cm_analysis(y_true, y_pred, labels, filename = None, ymap=None, figsize=(10,
     fig, ax = plt.subplots(figsize=figsize)
     sns.heatmap(cm, annot=annot, fmt='', ax=ax, linewidths = 2, linecolor = 'black', annot_kws = annot_kws,
                cmap = 'Blues')
-    if filename:
-        plt.savefig(filename)
