@@ -1,6 +1,6 @@
-#########################
-# Binomial Distribution #
-#########################
+#################################
+# Binomial Distribution, Part 1 #
+#################################
 According to Forbes (https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10), 78% of American workers live paycheck-to-paycheck.
 
 Let's say we take a random sample of 40 American workers.
@@ -10,6 +10,18 @@ Let's say we take a random sample of 40 American workers.
 2) What is the probability that between 25 and 35 people (inclusive) in our sample are living paycheck-to-paycheck?
 
 3) What is the probability that at least 35 people in our sample are living paycheck-to-paycheck?
+
+#################################
+# Binomial Distribution, Part 2 #
+#################################
+Now, you will attempt to outdo Isaac Newton. See this video by Vsauce 2 for an entertaining description and analysis of the problem: https://www.youtube.com/watch?v=RFlTawWwLZc. As described in the video, this is a problem which Isaac Newton got wrong. More precisely, he got the correct calculations, but his explanation was off. To be fair to Newton, the machinery of probability theory had not been developed yet in his time.
+
+Use the binomial distribution to answer this question.
+Which of the following three propositions has the greatest chance of success?
+A. Six fair dice are tossed independently and at least one “6” appears.
+B. Twelve fair dice are tossed independently and at least two “6”s appear.
+C. Eighteen fair dice are tossed independently and at least three “6”s appear.
+
 
 #######################
 # Normal Distribution #
@@ -27,22 +39,5 @@ The file appraisal_2017.csv includes the appraised values for 1000 Davidson Coun
 2) Apply a transformation to the appraisal values and then repeat the above step.
 3) Use what you have found to approximate the proportion of total houses in Davidson County with appraisal value at least $1,000,000.
 
-########################################
-# Poisson and Exponential Distribution #
-########################################
-In March of 2019, the Metro Nashville Police Department received an average of 1.75 911 calls per minute.
-Let's approximate the number of calls received in an hour by using a Poisson distribution with mean 1.75.
 
-1) What is the probability of received zero calls in a minute?
-2) How likely is is to receive at least 5 calls in a minute?
-3) How likely is is to receive at least 8 calls in a minute?
-4) How likely is it to receive between 3 and 5 calls in a minute, inclusive?
-5) How likely is it to have to wait at least two minutes between calls?
-6) How likely is it to have to wait at least five minutes between calls?
-7) How likely is it to have to wait less than 20 seconds between calls?
 
-Compare the real data to the theoretical distribution. Comment on how good of an approximation it is.
-
-########################
-# Placeholder Exercise #
-########################

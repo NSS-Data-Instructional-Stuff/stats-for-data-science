@@ -22,6 +22,6 @@ The file crashes_subset.csv contains all reported crashes in Davidson County in 
 
 2) Create a boxplot showing number of injuries vs collision type description. What do you notice?
 
-3) Find the average number of injuries per crash by collision type. Which type of crash has the highest average number of injuries. 
+3) Find the average number of injuries per crash by collision type. Which type of crash has the highest average number of injuries. Create a box plot to show the distribution of injuries by collision type.
 
 4) Compare the rate of hit and run crashes by category. Create a bar plot to show what you find. What do you notice?
