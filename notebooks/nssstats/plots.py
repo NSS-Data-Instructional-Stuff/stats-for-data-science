@@ -7,6 +7,7 @@ from scipy.stats import ttest_ind
 from statsmodels.stats.proportion import proportions_ztest
 from scipy.stats import norm
 from statsmodels.stats.proportion import proportion_confint
+from matplotlib.patches import Rectangle
 
 def range_plot(x, **kwargs):
     center = np.mean([np.min(x), np.max(x)])
@@ -517,3 +518,46 @@ def predicted_probability_plot(y_true, y_proba):
 
     plt.legend()
     plt.ylim(-0.5, 0.5);
+
+def quadrant_plot(x, y, quadrant = None, figsize = (8,6), labels = None):
+    x_mean = np.mean(x)
+    y_mean = np.mean(y)
+    
+    fig, ax = plt.subplots(figsize = figsize)
+    plt.scatter(x = x, y = y, zorder = 500, color = 'black', alpha = 0.7)
+    plt.axvline(x = x_mean, color = 'black')
+    plt.axhline(y = y_mean, color = 'black')
+    if labels:
+        plt.xlabel(labels[0])
+        plt.ylabel(labels[1])
+    
+    if quadrant in [1,2,3,4]:
+        color = 'blue'
+        if quadrant == 1:
+           r1 = Rectangle((x_mean, y_mean), plt.xlim()[1] - x_mean, plt.ylim()[1] - y_mean, color=color, alpha = 0.5) 
+        elif quadrant == 2:
+           r1 = Rectangle((x_mean, plt.ylim()[0]), plt.xlim()[1] - x_mean, y_mean - plt.ylim()[0], color=color, alpha = 0.5) 
+        elif quadrant == 3:
+           r1 = Rectangle((plt.xlim()[0], plt.ylim()[0]), x_mean - plt.xlim()[0], y_mean - plt.ylim()[0], color=color, alpha = 0.5) 
+        elif quadrant == 4:
+            r1 = Rectangle((plt.xlim()[0], y_mean), x_mean - plt.xlim()[0], plt.ylim()[1] - y_mean, color=color, alpha = 0.5)
+        ax.add_artist(r1);
+
+def half_plot(x, y, half = None, figsize = (8,6), labels = None):
+    x_mean = np.mean(x)
+    y_mean = np.mean(y)
+    
+    fig, ax = plt.subplots(figsize = figsize)
+    plt.scatter(x = x, y = y, zorder = 500, color = 'black', alpha = 0.7)
+    plt.axvline(x = x_mean, color = 'black')
+    plt.axhline(y = y_mean, color = 'black')
+    if labels:
+        plt.xlabel(labels[0])
+        plt.ylabel(labels[1])
+    
+    if half in ['left', 'right']:
+        if half == 'left':
+            r1 = Rectangle((plt.xlim()[0], plt.ylim()[0]), x_mean - plt.xlim()[0], plt.ylim()[1] - plt.ylim()[0], color='lightblue', alpha = 0.5)
+        elif half == 'right':
+            r1 = Rectangle((x_mean, plt.ylim()[0]), plt.xlim()[1] - x_mean, plt.ylim()[1] - plt.ylim()[0], color='lightblue', alpha = 0.5) 
+        ax.add_artist(r1); 
