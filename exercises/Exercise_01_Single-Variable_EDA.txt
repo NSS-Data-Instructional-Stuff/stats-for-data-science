@@ -40,7 +40,7 @@ The file General_Government_Employees_Titles_and_Base_Annual_Salaries.csv contai
 # Conceptual #
 ##############
 1. In what scenarios might the mean of a dataset be significantly lower than the median? Can you come up with any examples of such a distribution?
-2. True or False: The interquartile range is always less than half as large as the range. Justify your answer.
+2. Consider the distribution of number of Twitter followers per Twitter account. Would you expect the interquartile range of the number of Twitter followers to be (a) about half as large as the range (b) almost as large as the range (c) much smaller than the range? 
 3. You are analyzing the housing market in Davidson County. You notice that there are some very expensive homes and are afraid that including these homes might skew your analysis. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis? What alternatives do you have is you do not wish to drop any observations?
 4. You are analyzing daily stock market returns. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis?
 5. Say you are interested in studying commute times. You are looking at the daily commute times for two different people. Person A commutes from Murfreesboro into Nashville. Person B commutes in the opposite direction, from Nashville to Murfreesboro. If you look at the distribution of their daily commute times over a one-year period, which would you expect to have a larger standard deviation and why? Assume that they both leave for work around rush hour every morning.
