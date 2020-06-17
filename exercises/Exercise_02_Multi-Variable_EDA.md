@@ -4,6 +4,8 @@
 
 The file appraisal_2017.csv contains the 2017 appraised value (total_appr) and square footage (finished_area) for a random sample of 1000 houses in Davidson County.
 
+Read this data into a dataframe named *appraisal*.
+
 1. Create a scatterplot of total_appr vs finished_area. 
 
 2. By inspecting the scatterplot, describe the relationship between total_appr and finished_area. Is the direction of association positive or negative? Is the relationship linear? How strong is the relationship?
@@ -15,6 +17,8 @@ The file appraisal_2017.csv contains the 2017 appraised value (total_appr) and s
 ### Part 2: Crashes 
 
 The file crashes_subset.csv contains all reported crashes in Davidson County in 2018 which were classified as either head-on, front-to-rear, or a sideswipe where the cars were moving in the same direction.
+
+Read this dataset into a dataframe named *crashes*.
 
 1. Find the count of crashes by collision type. Create a bar plot showing the this count.
 

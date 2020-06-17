@@ -24,16 +24,21 @@ C. Eighteen fair dice are tossed independently and at least three “6”s appea
 ### Part 3: Normal Distribution - Pulse Rates 
 The file nhanes_pulse_sample.csv contains a sample of 100 men between the ages of 30 and 40 from the 2015 National Health and Nutrition Examination Survey.
 
+Read in this dataset as a dataframe named *nhanes*.
+
 1. Plot the histogram and Q-Q plot for the pulse rate from this sample. Does it appear that pulse rates are normally distributed?
+
 2. Use a normal approximation to answer the following questions:
   a) Approximately what  proportion of men between the age of 30 and 40 will have a pulse less than 60?
   b) Approximately what proportion of men between the age of 30 and 40 will have a pulse greater than 100?
 
 ### Part 4: Normal Distribution - Appraisal Values
 The file appraisal_2017.csv includes the appraised values for 1000 Davidson County homes in 2017.
+
+Read in this dataset as a dataframe named *appraisal*.
+
 1. Plot a histogram and Q-Q plot for the appraisal values. Does the distribution of the appraisal values appear to be approximately normal?
+
 2. Apply a transformation to the appraisal values and then repeat the above step.
+
 3. Use what you have found to approximate the proportion of total houses in Davidson County with appraisal value at least $1,000,000.
-
-
-

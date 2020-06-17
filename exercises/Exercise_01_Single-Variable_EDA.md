@@ -4,6 +4,8 @@
 
 The file physical_circulation.csv contains the total physical circulation (checkouts and renewals) at each branch of the Nashville Public Library.
 
+Read in this file as a dataframe named *circulation*.
+
 1. Find the following:
 * mean circulation
 * median circulation
@@ -19,6 +21,8 @@ The file physical_circulation.csv contains the total physical circulation (check
 ### Part 2: Metro Government Salaries
 
 The file General_Government_Employees_Titles_and_Base_Annual_Salaries.csv contains the base annual salary of all Metro Government employees.
+
+Read in this dataset as a dataframe named *salaries*.
 
 1. What are the mean and median salaries?
 

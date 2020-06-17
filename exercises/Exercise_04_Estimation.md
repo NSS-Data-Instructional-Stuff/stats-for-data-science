@@ -11,6 +11,8 @@ AvgDrinksPerWeek: Average number of drinks per week.
 
 MorningNightPerson: Someone might describe themselves as a morning-person or night-person. Which do you consider yourself to be?
 
+Read in this dataset as a dataframe named *hints*.
+
 1. Plot the distribution of the AverageTimeSitting variable.
 
 2. Find the mean and standard deviation of the AverageTimeSitting variable.
@@ -62,6 +64,8 @@ Since there are a ridiculous number of possible group assignments and combinator
 You are planning to open a new restaurant in Nashville, and are going to have an entirely new building built for this purpose. Before construction can start, you need to have a building permit issued. For planning purposes, you are trying to estimate how long you might have to wait for your permit.
 
 The file restaurant_permits.csv contains information about all permits for new restaurants issued in Nashville for the last three years. The wait_time column contains the number of days between when a permit application was entered and when the permit was issued.
+
+Read in this dataset as a dataframe named *permits*.
 
 Based on this data, construct 95% confidence intervals for the following:
 

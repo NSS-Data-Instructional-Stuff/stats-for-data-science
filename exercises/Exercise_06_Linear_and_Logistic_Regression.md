@@ -18,6 +18,8 @@ hum: humidity
 windspeed: wind speed
 rentals: count of total rental bikes (our target variable)
 
+Read in this data as a dataframe named *bikes*.
+
 1. Create boxplots of rentals vs. season, rentals vs. mnth, rentals vs. holiday, and rentals vs. weekday. Do you notice any trends?
 
 2. Create scatterplots of rentals vs. temp, rentals vs. atemp, rentals vs. hum, and rentals vs. windspeed. Do you notice any trends.
@@ -62,9 +64,14 @@ All feature values are recoded with four significant digits.
 
 We will consider the following set of features: 'radius_mean', 'texture_mean', 'perimeter_mean', 'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean', 'concave points_mean', 'symmetry_mean','fractal_dimension_mean'
 
+Read in this data as a dataframe named *cancer*.
+
 1. Look at box plots for each variable against diagnosis. For each one, describe the relationship that you see (eg. malignant tend to have higher average <variable>).
+
 2. Look at the scatterplots of each variable against each other variable. What do you see?
  
-Run a logistic regression model with response variable diagnosis and using all of the mean variables as predictors.
-3. Describe the performance of your model in terms of calibration and discrimination.
-4. Look at the coefficients. What is the sign of the coefficients for radius_mean? This seems unexpected. Can you explain why this happened?
+3. Run a logistic regression model with response variable diagnosis and using all of the mean variables as predictors.
+
+4. Describe the performance of your model in terms of calibration and discrimination.
+
+5. Look at the coefficients. What is the sign of the coefficients for radius_mean? This seems unexpected. Can you explain why this happened?
