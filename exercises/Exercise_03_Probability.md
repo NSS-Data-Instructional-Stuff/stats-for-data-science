@@ -1,18 +1,35 @@
 # Week 3 Exercises: Statistics for Data Science
 
 ### Part 1:  Binomial Distribution
-According to Forbes (https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10), 78% of American workers live paycheck-to-paycheck.
+According to Forbes [(https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10)](https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10), 78% of American workers live paycheck-to-paycheck.
 
-Let's say we take a random sample of 40 American workers.
+1. You take a random sample of 10 American workers.
 
-1. What is the probability that fewer that 25 people in our sample are living paycheck-to-paycheck?
 
-2. What is the probability that between 25 and 35 people (inclusive) in our sample are living paycheck-to-paycheck?
+	a. What is the probability that between 6 and 9 people (inclusive) in your sample are living paycheck-to-paycheck?
 
-3. What is the probability that at least 35 people in our sample are living paycheck-to-paycheck?
+	b. What is the probability that at least 9 people in your sample are living paycheck-to-paycheck?
+
+	c. What is the probability that fewer that 75% of people in your sample are living paycheck-to-paycheck?
+
+	d. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+
+2. You take a random sample of 25 American workers.
+	a. What is the probability that fewer than 75% of people in your sample are living paycheck-to-paycheck?
+	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+
+3. You take a random sample of 100 American workers. 
+	a. What is the probability that fewer than 75% of people in your sample are living paycheck-to-paycheck?
+	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+
+4. You take a random sample of 1000 American workers. 
+	a. What is the probability that fewer than 75% of people in your sample are living paycheck-to-paycheck?
+	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+
+5. What do you notice happens as the size of your sample increases?
 
 ### Part 2: The Newton Problem 
-Now, you will attempt to outdo Isaac Newton. See this video by Vsauce 2 for an entertaining description and analysis of the problem: https://www.youtube.com/watch?v=RFlTawWwLZc. As described in the video, this is a problem which Isaac Newton got wrong. More precisely, he got the correct calculations, but his explanation was off. To be fair to Newton, the machinery of probability theory had not been developed yet in his time.
+Now, you will attempt to outdo Isaac Newton. See this video by Vsauce 2 for an entertaining description and analysis of the problem: [https://www.youtube.com/watch?v=RFlTawWwLZc](https://www.youtube.com/watch?v=RFlTawWwLZc). As described in the video, this is a problem which Isaac Newton got wrong. More precisely, he got the correct calculations, but his explanation was off. To be fair to Newton, the machinery of probability theory had not been developed yet in his time.
 
 Use the binomial distribution to answer this question.
 Which of the following three propositions has the greatest chance of success?
