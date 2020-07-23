@@ -1,6 +1,23 @@
 # Week 5 Exercises: Statistics for Data Science
 
-### Part 1: Crashes on Weekend vs Weekday 
+### Part 1: Pulse Rates
+The file nhanes_pulse_sample.csv contains a sample of 100 men between the ages of 30 and 40 from the 2015 National Health and Nutrition Examination Survey.
+
+Read in this dataset as a dataframe named *nhanes*.
+
+You suspect that the average pulse rate for men between the ages of 30 and 40 is greater than 70 and want to use this data to test this hypothesis.
+
+1. What are your null and alternative hypotheses? Is this is one-tailed test or a two-tailed test?
+
+2. Find the mean and standard deviation of the pulse rate in your sample.
+
+3. Conduct a t-test to test your hypothesis.
+
+4. What p-value did you get?
+
+5. State your conclusion.
+
+### Part 2: Crashes on Weekend vs Weekday 
 We are interested in studying the difference between weekends and weekdays in terms of number of reported crashes in Davidson County. We speculate that there are a larger number of reported crashes on average on weekdays compared to weekends.
 
 The file crashes_sample.csv contains a random sample of 65 randomly selected days.
@@ -18,24 +35,6 @@ Read in this data as a dataframe named *crashes*.
 5. What p-value did you get?
 
 6. State your conclusion.
-
-
-### Part 2: Late Night Hit and Runs
-You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
-
-The file hit_and_run_sample.csv contains a random sample of 50 car crashes that took place in Davidson County.
-
-Read in this data as a dataframe named *hit_and_run*.
-
-1. Find the proportion of hit and run crashes for both late at night and not late at night. What is the observed difference between these two?
-
-2. State the null and alternative hypothesis.
-
-3. Conduct a z-test to test your hypothesis.
-
-4. What p-value did you get?
-
-5. State your conclusion.
 
 ### Part 3: Russia Constitutional Referendum
 
@@ -58,7 +57,24 @@ The final column, which is what we are most interested in, is the decimal value 
 3. Assume, as a null hypothesis that each digit is equally likely to appear as the decimal for any polling location (i.e., the probability of the decimal being 0 is 0.1). Under the assumption of this null hypothesis, what is the probability of seeing as extreme a proportion of 0's in the decimal position as was observed in the referendum?
 4. Does the result of this hypothesis test call into question to reported results of this referendum?
 
-### Part 4: NHANES Blood Pressure 
+### Part 4: Late Night Hit and Runs
+You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
+
+The file hit_and_run_sample.csv contains a random sample of 50 car crashes that took place in Davidson County.
+
+Read in this data as a dataframe named *hit_and_run*.
+
+1. Find the proportion of hit and run crashes for both late at night and not late at night. What is the observed difference between these two?
+
+2. State the null and alternative hypothesis.
+
+3. Conduct a fisher exact test to test your hypothesis.
+
+4. What p-value did you get?
+
+5. State your conclusion.
+
+### Part 5: NHANES Blood Pressure 
 The file nhanes_blood_pressure.csv contains data coming from the 2013 National Health and Nutrition Examination Survey. Specifically, it contains three variables:
 
 * SEQN: an identifier number per participant
