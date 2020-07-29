@@ -2,21 +2,22 @@
 
 ### Part 1: Linear Regression
 
-The file bikes.csv contains a cleaned version of the dataset available at https://www.kaggle.com/marklvl/bike-sharing-dataset. It contains a two-year historical log of bike rentals from the Capital Bikeshare system in Washington, D.C.
+The file bikes.csv contains a cleaned version of the dataset available at [https://www.kaggle.com/marklvl/bike-sharing-dataset](https://www.kaggle.com/marklvl/bike-sharing-dataset). It contains a two-year historical log of bike rentals from the Capital Bikeshare system in Washington, D.C.
 
-Your task in this exercise is to learn how the number of rentals on a given day (cnt) is related to environmental and seasonal factors.
+Your task in this exercise is to learn how the number of rentals on a given day (rentals) is related to environmental and seasonal factors.
 
 The columns for this dataset are as follows:
-dteday: record's date
-season: the season
-mnth: the month 
-holiday: whether the day was a holiday or not 
-weekday: day of the week
-temp: temperature in Fahrenheit
-atemp: "Feels like" temperature in Fahrenheit
-hum: humidity
-windspeed: wind speed
-rentals: count of total rental bikes (our target variable)
+
+* dteday: record's date
+* season: the season
+* mnth: the month 
+* holiday: whether the day was a holiday or not 
+* weekday: day of the week
+* temp: temperature in Fahrenheit
+* atemp: "Feels like" temperature in Fahrenheit
+* hum: humidity
+* windspeed: wind speed
+* rentals: count of total rental bikes (our target variable)
 
 Read in this data as a dataframe named *bikes*.
 
@@ -30,30 +31,30 @@ Read in this data as a dataframe named *bikes*.
 
 5. What coefficients do you get for the season variables? Explain, in English, the meaning of these coefficients. Do they make sense, give the boxplots you created earlier?
 
-6. Calculate both the R2 score and the mean absolute error on the test set. Explain, in English, what these metrics are telling you about your model.
+6. Calculate both the $R^2$ score and the mean absolute error on the test set. Explain, in English, what these metrics are telling you about your model.
 
 7. What potential problems do you see in regard to interpreting the coefficients you got?
 
 ### Part 2: Logistic Regression
-The dataset breast_cancer.csv comes from https://www.kaggle.com/uciml/breast-cancer-wisconsin-data.
+The dataset breast_cancer.csv comes from [https://www.kaggle.com/uciml/breast-cancer-wisconsin-data](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data).
 
 Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
 n the 3-dimensional space is that described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34].
 
 The columns are as follows:
 
-id: ID number of the patient 
-diagnosis: Diagnosis, where M = malignant and B = benign
-radius_mean: mean of distances from center to points on the perimeter
-texture_mean: standard deviation of gray-scale values 
-perimeter_mean: perimeter
-area_mean: area
-smoothness_mean: local variation in radius lengths 
-compactness_mean: perimeter^2 / area - 1.0
-concavity_mean: severity of concave portions of the contour
-concave points_mean: number of concave portions of the contour
-symmetry_mean: symmetry
-fractal_dimension_mean: "coastline approximation" - 1
+* id: ID number of the patient 
+* diagnosis: Diagnosis, where M = malignant and B = benign
+* radius_mean: mean of distances from center to points on the perimeter
+* texture_mean: standard deviation of gray-scale values 
+* perimeter_mean: perimeter
+* area_mean: area
+* smoothness_mean: local variation in radius lengths 
+* compactness_mean: perimeter^2 / area - 1.0
+* concavity_mean: severity of concave portions of the contour
+* concave points_mean: number of concave portions of the contour
+* symmetry_mean: symmetry
+* fractal_dimension_mean: "coastline approximation" - 1
 
 The mean, standard error and "worst" or largest (mean of the three
 largest values) of these features were computed for each image,
