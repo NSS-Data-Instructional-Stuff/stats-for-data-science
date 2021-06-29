@@ -1,0 +1,72 @@
+Week 1:
+	Day 1:
+		* Slides_01a_Introduction_to_Statistics.pdf
+		* Slides_01b_What_is_Data.pdf
+		* Notebook_01_Exploratory_Data_Analysis_Part_1_Single_Variable.ipynb (Through Categorical Variables)
+		
+	Day 2:
+		* Notebook_01_Exploratory_Data_Analysis_Part_2_Single_Variable.ipynb (Through the end)
+		* Exercise_01_Single_Variable_EDA.pdf
+		
+Week 2:
+	Day 1:
+		* Review Exercise 01 [Skip part 1 but do parts 2 and 3]
+		* Notebook 02 Exploratory Data Analysis-Part 2 Two Variable.ipynb
+		
+	Day 2:
+		* Notebook 02 Exploratory Data Analysis-Part 2 Two Variable.ipynb 
+		* Exercise_02_Multi-Variable_EDA.pdf - Time to work on the exercises if all goes well.
+
+Week 3:
+	Day 1:
+		* Review Exercise_02
+		* Slides 02 Probability Part 1 Basics to Conditional.pdf
+		
+	Day 2:
+		* Slides 03 Probability Part 2 Random Variables.pdf
+		* Notebook 03 Probability Calculations Binomial Normal.ipynb
+		* Exercises_03_Probability.pdf
+		
+Week 4:
+	Day 1:
+		* Review Exercises_03
+		* Slides - Sampling Distributions / Confidence Intervals
+		* Notebook 04 Estimation Part 1.ipynb
+		
+	Day 2:
+		* Slides - Sampling Distributions, Part 2 (Categorical Variables)
+		* Continue Notebook 04 Estimation Par.ipynb
+		* Slides 04b Part 2 Estimation Cautions.pdf
+		* Exercises - Estimation
+
+Week 5:
+	Day 1:
+		* Review Exercise_04
+		* Slides - The Bootstrap
+		* Notebook - Estimation Part 2 the Bootstrap.ipynb
+	
+	Day 2:
+		* Slides 05a Hypothesis Testing 01 Introduction.pdf
+		* Notebook 05a Hypothesis Testing Part 1.ipynb
+		* Slides 05b Permutation Tests
+		* Notebook 05b Permutation Tests
+		* Exercise 05 Hypothesis Testing.pdf Parts 1 and 2
+		
+Week 6: 
+	Day 1:
+		* Review Exercise_05
+		* Notebook 05c Hypothesis Testing Part 3 Effect Size.ipynb
+		
+	Day 2:
+		* Slides_06_Linear_Regression.pdf
+		* Notebook 06a Linear Regression.ipynb
+		* Exercise 06 Linear and Logistic Regression.pdf Part 1
+		
+Week 7:
+	Day 1:
+		* Notebook 06b Logistic Regression.ipynb
+		* Exercise 06 Linear and Logistic Regression.pdf Part 2
+		
+	Day 2:
+		* Review Exercise 06
+		* Assessment
