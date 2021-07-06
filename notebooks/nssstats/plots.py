@@ -74,11 +74,11 @@ def iqr_plot(x, **kwargs):
 
     plt.ylim(-.22*y_range, y + 0.15*y_range);
 
-def qq_plot(data):
+def qq_plot(data, **kwargs):
     mu = np.mean(data)
     sigma = np.std(data)
     
-    sm.qqplot(data, line='45', loc = mu, scale = sigma);
+    sm.qqplot(data, line='45', loc = mu, scale = sigma, **kwargs);
 
 def hypot_plot_mean(data, popmean, type = 'both', area = True):
     
