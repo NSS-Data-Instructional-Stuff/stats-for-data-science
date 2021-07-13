@@ -41,15 +41,15 @@ c. Eighteen fair dice are tossed independently and at least three “6”s appea
 
 ### Part 4: The Normal Distribution
 1. Using a standard normal distribution (mean 0, standard deviation 1), answer the following questions.  
-a. What percentage of outcomes are within one standard deviation of the mean?  
-b. What percentage of outcomes are within two standard deviations of the mean?  
-c. What percentage of outcomes are within three standard deviations of the mean?
+	a. What percentage of outcomes are within one standard deviation of the mean?  
+	b. What percentage of outcomes are within two standard deviations of the mean?  
+	c. What percentage of outcomes are within three standard deviations of the mean?
 2. How do your answers change to the previous question if you are using a normal distribution that has a different mean and/or standard deviation?
 3. For this question, assume that the heights of men in the US are normally distributed with a mean of 70 inches and standard deviation of 3 inches.  
-a. If a single man is chosen at random, what is the probability that his height is less than 66 inches tall?  
-b. If a single man in chosen at random, what is the probability that his height is greater than 72 inches tall?  
-c. If a single man is chosen at random, what is the probability that his height is between 68 and 72 inches?  
-d. If two men are chosen at random, what is the probability that both of them are between 68 and 72 inches tall? (Hint: You'll need to use your answer from part a. plus the binomial distribution to answer this.)  
-e. If twenty-five men are chosen at random, what is the probability that all of them are between 68 and 72 inches tall?   
-f. Challenge Question - If two men are chosen at random, what is the probability that their __mean__ height is between 68 and 72 inches tall? (Hint: You'll probably have to simulate this to get an approximate answer. Similar to what we did to generate binomial random variables, we can generate normal random variables using `norm.rvs()`. For example, `norm.rvs(loc = 70, scale = 3, size = 2)` will generate two observations from a normal random variable with mean 70 and standard deviation 3.)  
-g. Challenge Question, Part 2 - If twenty-five men are chosen at random, what is the probability that their __mean__ height is between 68 and 72 inches tall?
+	a. If a single man is chosen at random, what is the probability that his height is less than 66 inches tall?  
+	b. If a single man in chosen at random, what is the probability that his height is greater than 72 inches tall?  
+	c. If a single man is chosen at random, what is the probability that his height is between 68 and 72 inches?  
+	d. If two men are chosen at random, what is the probability that both of them are between 68 and 72 inches tall? (Hint: You'll need to use your answer from part a. plus the binomial distribution to answer this.)  
+	e. If twenty-five men are chosen at random, what is the probability that all of them are between 68 and 72 inches tall?   
+	f. Challenge Question - If two men are chosen at random, what is the probability that their __mean__ height is between 68 and 72 inches tall? (Hint: You'll probably have to simulate this to get an approximate answer. Similar to what we did to generate binomial random variables, we can generate normal random variables using `norm.rvs()`. For example, `norm.rvs(loc = 70, scale = 3, size = 2)` will generate two observations from a normal random variable with mean 70 and standard deviation 3.)  
+	g. Challenge Question, Part 2 - If twenty-five men are chosen at random, what is the probability that their __mean__ height is between 68 and 72 inches tall?
