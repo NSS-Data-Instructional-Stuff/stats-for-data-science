@@ -35,9 +35,9 @@ c. Eighteen fair dice are tossed independently and at least three “6”s appea
 ### Part 3: Binomial Distribution - Conceptual
 1. Using what you know about the variance of a binomial random variable, which situation do you think would require a larger sample size to accurately estimate? Why?  
 	a. The proportion of voters who will vote for candidate A in an upcoming election, where you know that it is a close race between candidate A and candidate B.  
-	b. The click-through rate of an ad on your company's website, when you know that historically, the click-through rate is very low (< 2%).
+	b. The proportion of people who will click on an ad on your company's website, when you know that historically, the proportion of people clicking on ads is is very low (< 2%).
 
-2. If instead of counting the total number of successes, you were looking at the _proportion_ of successes (total number of successes / number of trials), what happens to the variance as the number of trials increases (keeping the probability of success fixed)?
+2. The binomial distribution gives the probability of a particular number of successes. If instead of counting the total number of successes, you were looking at the _proportion_ of successes (total number of successes / number of trials), what happens to the variance as the number of trials increases (keeping the probability of success fixed)?
 
 ### Part 4: The Normal Distribution
 1. Using a standard normal distribution (mean 0, standard deviation 1), answer the following questions.  
