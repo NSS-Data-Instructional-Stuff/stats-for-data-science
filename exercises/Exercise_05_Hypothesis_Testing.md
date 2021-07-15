@@ -1,5 +1,19 @@
 # Week 5 Exercises: Statistics for Data Science
 
+### Part 1: Restaurant Permits
+
+You are planning to open a new restaurant in Nashville, and are going to have an entirely new building built for this purpose. Before construction can start, you need to have a building permit issued. For planning purposes, you are trying to estimate how long you might have to wait for your permit.
+
+The file restaurant_permits.csv contains information about all permits for new restaurants issued in Nashville for the last three years. The wait_time column contains the number of days between when a permit application was entered and when the permit was issued.
+
+Read in this dataset as a dataframe named *permits*.
+
+Based on this data, construct 95% confidence intervals for the following:
+
+1. Quick scenario: the 25th percentile of wait times
+2. Worst-case scenario: the 90th percentile of wait times
+3. Average scenario: the mean wait time. For this case, build a confidence interval using a t-interval (what we did last week) and also using a bootstrap interval. What do you notice about the results of both of these methods?
+
 ### Part 1: Pulse Rates
 The file nhanes_pulse_sample.csv contains a sample of 100 men between the ages of 30 and 40 from the 2015 National Health and Nutrition Examination Survey.
 
