@@ -14,7 +14,7 @@ Based on this data, construct 95% confidence intervals for the following:
 2. Worst-case scenario: the 90th percentile of wait times
 3. Average scenario: the mean wait time. For this case, build a confidence interval using a t-interval (what we did last week) and also using a bootstrap interval. What do you notice about the results of both of these methods?
 
-### Part 1: Pulse Rates
+### Part 2: Pulse Rates
 The file nhanes_pulse_sample.csv contains a sample of 100 men between the ages of 30 and 40 from the 2015 National Health and Nutrition Examination Survey.
 
 Read in this dataset as a dataframe named *nhanes*.
@@ -31,7 +31,7 @@ You suspect that the average pulse rate for men between the ages of 30 and 40 is
 
 5. State your conclusion.
 
-### Part 2: Crashes on Weekend vs Weekday 
+### Part 3: Crashes on Weekend vs Weekday 
 We are interested in studying the difference between weekends and weekdays in terms of number of reported crashes in Davidson County. We speculate that there are a larger number of reported crashes on average on weekdays compared to weekends.
 
 The file crashes_sample.csv contains a random sample of 65 randomly selected days.
@@ -50,7 +50,7 @@ Read in this data as a dataframe named *crashes*.
 
 6. State your conclusion.
 
-### Part 3: Russia Constitutional Referendum
+### Part 4: Russia Constitutional Referendum
 
 A 2016 paper published in the Annals of Applied Statistics [(https://projecteuclid.org/euclid.aoas/1458909907)](https://projecteuclid.org/euclid.aoas/1458909907)  suggests that election falsification can be indicated by the presence of higher-than-usual reported number of integer results. The paper suggests that this may be due to the well-known psychological phenomenon of attraction to round numbers.
 
@@ -71,7 +71,7 @@ The final column, which is what we are most interested in, is the decimal value 
 3. Assume, as a null hypothesis that each digit is equally likely to appear as the decimal for any polling location (i.e., the probability of the decimal being 0 is 0.1). Under the assumption of this null hypothesis, what is the probability of seeing as extreme a proportion of 0's in the decimal position as was observed in the referendum?
 4. Does the result of this hypothesis test call into question to reported results of this referendum?
 
-### Part 4: Late Night Hit and Runs
+### Part 5: Late Night Hit and Runs
 You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
 
 The file hit_and_run_sample.csv contains a random sample of 50 car crashes that took place in Davidson County.
@@ -87,30 +87,3 @@ Read in this data as a dataframe named *hit_and_run*.
 4. What p-value did you get?
 
 5. State your conclusion.
-
-### Part 5: NHANES Blood Pressure 
-The file nhanes_blood_pressure.csv contains data coming from the 2013 National Health and Nutrition Examination Survey. Specifically, it contains three variables:
-
-* SEQN: an identifier number per participant
-* add_salt_rarely: Whether that participant indicated that they rarely added salt to their food.
-* systolic_blood_pressure: Systolic blood pressure measurement.
-* body_mass_index: Body mass index
-
-You suspect that people who rarely add salt to their food will have lower blood pressures on average than those who add it more than rarely. Let's test this claim.
-
-Read in the data as a dataframe named *nhanes*.
-
-1. Create a boxplot showing systolic blood pressure vs whether a person rarely adds salt to their food. What do you notice from the boxplot. 
-
-2. What are the null and alternative hypothesis?
-
-3. What is the observed difference in the average systolic blood pressure between groups?
-
-4. Conduct a t-test to test your hypotheses.
-
-5. What p-value did you get?
-
-6. State your conclusion.
-
-7. Find the effect size for the difference. What does this say about the difference you found between the two groups?
- blood pressure. What p-value do you obtain? State your conclusion.
