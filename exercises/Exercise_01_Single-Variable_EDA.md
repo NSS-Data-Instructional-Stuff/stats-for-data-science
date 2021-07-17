@@ -13,7 +13,7 @@ Read in this file as a dataframe named *circulation*.
 * the 10% trimmed mean
 * standard deviation
 
-2. Plot the distribution of circulation numbers. Describe the shape of the distribution. Is is symmetric? left-skewed? right-skewed? How many modes does it have?
+2. Plot the distribution of circulation numbers. Describe the shape of the distribution. Is it symmetric? left-skewed? right-skewed? How many modes does it have?
 
 3. Would you consider any branches to be outliers?
 
@@ -40,7 +40,7 @@ Read in this dataset as a dataframe named *salaries*.
 
 2. Can you come up with an example of a distribution that has a median of 0 but a nonzero mean?
 
-3. You are analyzing the housing market in Davidson County. You notice that there are some very expensive homes and are afraid that including these homes might skew your analysis. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis? What alternatives do you have is you do not wish to drop any observations?
+3. You are analyzing the housing market in Davidson County. You notice that there are some very expensive homes and are afraid that including these homes might skew your analysis. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis? What alternatives do you have if you do not wish to drop any observations?
 
 4. You are analyzing daily stock market returns. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis?
 
