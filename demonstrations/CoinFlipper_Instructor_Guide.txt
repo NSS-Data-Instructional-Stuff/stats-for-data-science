@@ -1,0 +1,134 @@
+1. Start by having each student flip 10 times. Ask what everyone thinks based on that. Anybody want to make a guess based on that?
+
+2. Then have them continue to flip multiple times. Ask why/why not people think their coin is fair.
+
+	Point out that to make an informed guess, it would be helpful if we could quantify what is expected behavior of a fair coin. If we observe something that is way out of line from expected, we could change our decision.
+
+3. Question - if we see 0 (or 10) heads, can we conclude that it is probably not fair?
+	* Figure out the probability of 0 heads - requires the exact sequence TTTTTTTTTT
+	* Each flip is independent! => P(TTTTTTTTTT) = P(T)P(T)P(T)P(T)P(T)P(T)P(T)P(T)P(T)P(T) = P(T)^10 = (0.5)^10 = 0.0009765625
+
+4. Followup Question - What if we see a sequence of 10 flips with only 1 head?
+	* HTTTTTTTTT	
+	* THTTTTTTTT	
+	* TTHTTTTTTT	
+	* ...
+	
+	Ten total sequences.
+	
+
+	P(HTTTTTTTTT) = P(H)\cdot P(T) \cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)
+			 = P(H) \cdot P(T)^9 = (0.5)^1 * (0.5)^9
+			 
+	P(THTTTTTTTT) = P(T)\cdot P(H)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T) = P(H)\cdot P(T)^9
+	
+	P(TTHTTTTTTT) = P(T)\cdot P(T)\cdot P(H)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T)\cdot P(T) = P(H)\cdot P(T)^9
+	
+	
+	P(any of these sequences) = P(H)\cdot P(T)^9
+	
+	
+	
+	
+	Also, these events are mutually exclusive, so to get the total probability, we can just add the individual probabilities:
+	
+	P(exactly one heads) = P(HTTTTTTTTT) + P(THTTTTTTTT) + P(TTHTTTTTTT) + ... = 10*P(H)^1*P(T)^9 = 10*(0.5)^1*(0.5)^9 = 0.009765625
+	
+5. Harder Question - What if we see a sequence of 10 flips with only 2 heads?
+	
+	We could maybe make this work, or we could use the binomial coefficients ->
+	
+	binom(n, k) = number of sequences of n flips with exactly k heads
+	
+	Number of sequences with exactly 2 heads -> binom(10,2)
+	
+	Each is equally likely -
+	
+	Probability of any of them: P(H)^2*P(T)^8
+
+	
+	Total probability = binom(10,2) * (0.5)^2 * (0.5)^8
+	Total probability = 0.0439453125
+	
+6. What about exactly 3 heads?
+	
+	binom(10,3) = 120
+	
+	120 * (0.5)^3 * (0.5)^7 = 0.1171875
+	
+	binom(10,3) * (0.5)^3 * (0.5)^7
+	
+	General recipe:
+	Probability of exactly k heads in 10 flips of a fair coin:
+	
+		binom(10, k) * (0.5)^k * (0.5)^(10-k)
+		
+	Plot this -> This is the probability distribution function.
+		
+
+
+	Even more general recipe: What if we want to vary the length of the sequence? Instead of 10 flips, n flips? 
+	Probability of exactly k heads in n flips of a fair coin:
+		binom(n, k) * (0.5)^k * (0.5)^(n-k)
+		
+	Make a plot for this -> then increase the number of flips.
+	
+	What do we observe as we increase n? 
+
+
+#####  Okay, are we done? If we say 0 or 1, we can conclude that it is really unlikely to be fair?  #####
+
+No - we have looked at multiple sequences of flips, not just one.
+
+7. Now, the really difficult one. We have been looking not just at a single sequence of 10 flips but a sequence of sequences. 
+
+What is the probability that in 20 sequences, we will see exactly one time where there is exactly one head?
+
+	A = sequence with exactly one head
+	B = sequence with any other number of heads
+
+	ABBBBBBBBBBBBBBBBBBB -> (0.009765625) * (0.990234375) * (0.990234375) * ... * (0.990234375) = (0.009765625)^1 * (0.990234375)^19
+	
+	BABBBBBBBBBBBBBBBBBB -> (0.990234375) * (0.009765625) * (0.990234375) * ... * (0.990234375) = (0.009765625)^1 * (0.990234375)^19
+	
+	...
+	
+	binom(20,1) * (0.009765625)^1 * (0.990234375)^19 = 0.16208842706819387
+	
+8. Variant - What is the probability that in 20 sequences, we will see exactly two times where there is exactly one head?
+
+	AABBBBBBBBBBBBBBBBBB -> (0.009765625) * (0.009765625) * (0.990234375) * ... * (0.990234375) = (0.009765625)^2 * (0.990234375)^18
+	
+	binom(20,2) * (0.009765625)^2 * (0.990234375)^18
+	
+	Before calculating, will this probability go up or down? 
+	
+	The individual probabilities will go down, but there are more cases that we care about.
+	
+	binom(20,2) * (0.009765625)^2 * (0.990234375)^18 = 0.01518579938015623
+	
+9. From here, can we get a general recipe?
+
+	binom(20,i) * (0.009765625)^i * (0.990234375)^(20 - i)
+	
+10. Most general recipe.
+
+	p = probability of success
+	
+	n = number of trials
+	
+	probability of k successes:
+	
+	binom(n,k) * p^k * (1-p)^(n-k)
+	
+	What we are looking at is called the **binomial distribution**.
+	
+11. Finally, what is the probability of seeing at least 1 sequence with exactly one head?
+
+	P(1 head or 2 heads or 3 heads or ... or 20 heads) -> Annoying
+	
+	Fact: 
+	1 = P(0 heads or 1 head or 2 heads or 3 heads or ... or 20 heads) = P(0 heads) + P(1 head or 2 heads or 3 heads or ... or 20 heads) =>
+	
+	P(1 head or 2 heads or 3 heads or ... or 20 heads) = 1 - P(0 heads) = 1 - binom(20, 0) * (0.009765625)^0 * (0.990234375)^(20 - 0) =
+		1 - (0.990234375)^20 = 0.17821167476425714

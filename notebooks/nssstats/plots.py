@@ -17,7 +17,7 @@ def range_plot(x, **kwargs):
     x_range = plt.xlim()[1] - plt.xlim()[0]
     
     plt.hlines(y = 0, xmin = np.min(x) - 0.01*x_range, xmax = np.max(x) + 0.01*x_range)
-    plt.annotate(s = 'Range', ha = 'center', va = 'bottom', fontweight = 'bold',
+    plt.annotate(text = 'Range', ha = 'center', va = 'bottom', fontweight = 'bold',
                  xy = (center, y + 0.05*y_range), fontsize = 14)
     plt.plot([np.min(x), np.max(x)], [y + 0.05*y_range, y + 0.05*y_range], linewidth = 3, color = 'black')
     plt.plot([np.min(x), np.min(x)], [y+.02*y_range, y + .08*y_range], linewidth = 3, color = 'black')
@@ -34,12 +34,12 @@ def std_plot(x, **kwargs):
     x_range = plt.xlim()[1] - plt.xlim()[0]
 
     plt.hlines(y = 0, xmin = np.min(x) - 0.01*x_range, xmax = np.max(x) + 0.01*x_range)
-    plt.annotate(s = 'Mean', ha = 'center', va = 'top', fontweight = 'bold',
+    plt.annotate(text = 'Mean', ha = 'center', va = 'top', fontweight = 'bold',
                  xy = (np.mean(x), -.01*y_range), xytext = (np.mean(x), -.15*y_range), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
 
-    plt.annotate(s = '$\sigma$', ha = 'center', va = 'bottom', fontweight = 'bold',
+    plt.annotate(text = '$\sigma$', ha = 'center', va = 'bottom', fontweight = 'bold',
                   xy = (mu - sigma / 2, y + 0.05*y_range), fontsize = 14)
-    plt.annotate(s = '$\sigma$', ha = 'center', va = 'bottom', fontweight = 'bold',
+    plt.annotate(text = '$\sigma$', ha = 'center', va = 'bottom', fontweight = 'bold',
                   xy = (mu + sigma / 2, y + 0.05*y_range), fontsize = 14)
     plt.plot([mu - sigma, mu], [y + 0.05*y_range, y + 0.05*y_range], linewidth = 3, color = 'black')
     plt.plot([mu, mu +sigma], [y + 0.05*y_range, y + 0.05*y_range], linewidth = 3, color = 'black')
@@ -61,10 +61,10 @@ def iqr_plot(x, **kwargs):
     x_range = plt.xlim()[1] - plt.xlim()[0]
 
     plt.hlines(y = 0, xmin = np.min(x) - 0.01*x_range, xmax = np.max(x) + 0.01*x_range)
-    plt.annotate(s = 'Median', ha = 'center', va = 'top', fontweight = 'bold',
+    plt.annotate(text = 'Median', ha = 'center', va = 'top', fontweight = 'bold',
                  xy = (med, -.01*y_range), xytext = (med, -.15*y_range), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'blue'))
 
-    plt.annotate(s = 'IQR', ha = 'center', va = 'bottom', fontweight = 'bold',
+    plt.annotate(text = 'IQR', ha = 'center', va = 'bottom', fontweight = 'bold',
                   xy = ((lq + uq) / 2, y + 0.05*y_range), fontsize = 14)
     
     plt.plot([lq, uq], [y + 0.05*y_range, y + 0.05*y_range], linewidth = 3, color = 'black')
@@ -74,11 +74,11 @@ def iqr_plot(x, **kwargs):
 
     plt.ylim(-.22*y_range, y + 0.15*y_range);
 
-def qq_plot(data):
+def qq_plot(data, **kwargs):
     mu = np.mean(data)
     sigma = np.std(data)
     
-    sm.qqplot(data, line='45', loc = mu, scale = sigma);
+    sm.qqplot(data, line='45', loc = mu, scale = sigma, **kwargs);
 
 def hypot_plot_mean(data, popmean, type = 'both', area = True):
     
@@ -121,10 +121,10 @@ def hypot_plot_mean(data, popmean, type = 'both', area = True):
             plt.fill_between(section, t.pdf(section, df = df), color = 'red')
     for edge in edges:
         plt.vlines(x = edge, ymin =0, ymax = t.pdf(edge, df = df), lw = 3, color = 'black')
-        plt.annotate(s = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
+        plt.annotate(text = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
                      va = 'top', ha = 'center')
         
-    plt.annotate(s = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
+    plt.annotate(text = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
              xy = (test_stat, -.05), xytext = (test_stat, -.1), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
     
     if area:
@@ -134,12 +134,12 @@ def hypot_plot_mean(data, popmean, type = 'both', area = True):
 
             test_stat = np.abs(test_stat)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
                     xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = (-test_stat + 0.1, t.pdf(test_stat, df = df)/2),
                     xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -147,7 +147,7 @@ def hypot_plot_mean(data, popmean, type = 'both', area = True):
         if type == 'right':
             #area = round(t.cdf(-test_stat, df = n-1), 4)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
                     xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -155,7 +155,7 @@ def hypot_plot_mean(data, popmean, type = 'both', area = True):
         if type == 'left':
             #area = round(t.cdf(test_stat, df = n-1), 4)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.01),
                     xytext = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -164,7 +164,7 @@ def hypot_plot_mean(data, popmean, type = 'both', area = True):
     plt.hlines(y = 0, xmin = min(-3, -np.abs(test_stat + 0.25)), xmax = max(3, np.abs(test_stat + .25)))
     plt.yticks([])
     plt.xticks([])
-    plt.annotate(s = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
+    plt.annotate(text = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
                  va = 'top', ha = 'center')  
        
     ax.spines['top'].set_visible(False)
@@ -216,10 +216,10 @@ def hypot_plot_mean_2sample(data1, data2, type = 'both', area = True):
             plt.fill_between(section, t.pdf(section, df = df), color = 'red')
     for edge in edges:
         plt.vlines(x = edge, ymin =0, ymax = t.pdf(edge, df = df), lw = 3, color = 'black')
-        plt.annotate(s = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
+        plt.annotate(text = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
                      va = 'top', ha = 'center')
         
-    plt.annotate(s = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
+    plt.annotate(text = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
              xy = (test_stat, -.05), xytext = (test_stat, -.1), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
     
     if area:
@@ -229,12 +229,12 @@ def hypot_plot_mean_2sample(data1, data2, type = 'both', area = True):
 
             test_stat = np.abs(test_stat)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
                     xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = (-test_stat + 0.1, t.pdf(test_stat, df = df)/2),
                     xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -242,7 +242,7 @@ def hypot_plot_mean_2sample(data1, data2, type = 'both', area = True):
         if type == 'right':
             #area = round(t.cdf(-test_stat, df = n-1), 4)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.01),
                     xytext = ((test_stat + x_max) / 2, t.pdf((test_stat + x_max)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -250,7 +250,7 @@ def hypot_plot_mean_2sample(data1, data2, type = 'both', area = True):
         if type == 'left':
             #area = round(t.cdf(test_stat, df = n-1), 4)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.01),
                     xytext = ((test_stat + x_min) / 2, t.pdf((test_stat + x_min)/2, df = df) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -259,7 +259,7 @@ def hypot_plot_mean_2sample(data1, data2, type = 'both', area = True):
     plt.hlines(y = 0, xmin = min(-3, -np.abs(test_stat + 0.25)), xmax = max(3, np.abs(test_stat + .25)))
     plt.yticks([])
     plt.xticks([])
-    plt.annotate(s = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
+    plt.annotate(text = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
                  va = 'top', ha = 'center')  
        
     ax.spines['top'].set_visible(False)
@@ -313,10 +313,10 @@ def hypot_plot_proportion_2sample(counts, nobs, alternative = 'two-sided', area 
             plt.fill_between(section, norm.pdf(section), color = 'red')
     for edge in edges:
         plt.vlines(x = edge, ymin =0, ymax = norm.pdf(edge), lw = 3, color = 'black')
-        plt.annotate(s = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
+        plt.annotate(text = np.round(edge,4), xy = (edge, -0.01), fontsize = 14, fontweight = 'bold', 
                      va = 'top', ha = 'center')
         
-    plt.annotate(s = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
+    plt.annotate(text = 'Test\n Statistic', ha = 'center', va = 'top', fontweight = 'bold',
              xy = (test_stat, -.05), xytext = (test_stat, -.1), arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
     
     if area:
@@ -326,12 +326,12 @@ def hypot_plot_proportion_2sample(counts, nobs, alternative = 'two-sided', area 
 
             test_stat = np.abs(test_stat)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_max) / 2, norm.pdf((test_stat + x_max)/2) + 0.01),
                     xytext = ((test_stat + x_max) / 2, norm.pdf((test_stat + x_max)/2) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = (-test_stat + 0.1, norm.pdf(test_stat)/2),
                     xytext = ((test_stat + x_max) / 2, norm.pdf((test_stat + x_max)/2) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -339,7 +339,7 @@ def hypot_plot_proportion_2sample(counts, nobs, alternative = 'two-sided', area 
         if type == 'right':
             #area = round(t.cdf(-test_stat, df = n-1), 4)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_max) / 2, norm.pdf((test_stat + x_max)/2) + 0.01),
                     xytext = ((test_stat + x_max) / 2, norm.pdf((test_stat + x_max)/2) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -347,7 +347,7 @@ def hypot_plot_proportion_2sample(counts, nobs, alternative = 'two-sided', area 
         if type == 'left':
             #area = round(t.cdf(test_stat, df = n-1), 4)
 
-            plt.annotate(s = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
+            plt.annotate(text = 'Area = {}'.format(area), ha = 'center', fontweight = 'bold', fontsize = 14,
                     xy = ((test_stat + x_min) / 2, norm.pdf((test_stat + x_min)/2) + 0.01),
                     xytext = ((test_stat + x_min) / 2, norm.pdf((test_stat + x_min)/2) + 0.2),
                     arrowprops=dict(width = 4, headwidth = 8, facecolor = 'black'))
@@ -356,7 +356,7 @@ def hypot_plot_proportion_2sample(counts, nobs, alternative = 'two-sided', area 
     plt.hlines(y = 0, xmin = min(-3, -np.abs(test_stat + 0.25)), xmax = max(3, np.abs(test_stat + .25)))
     plt.yticks([])
     plt.xticks([])
-    plt.annotate(s = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
+    plt.annotate(text = '0', xy = (0, -0.01), fontsize = 14, fontweight = 'bold', 
                  va = 'top', ha = 'center')  
        
     ax.spines['top'].set_visible(False)
@@ -383,7 +383,7 @@ def deviation_plot(Player, df):
     xmin, xmax = plt.xlim()
     
     plt.scatter([salary], [0 + 0.015], edgecolor = 'black', color = 'orange', s = 100)
-    plt.annotate(s = 'Mean ($\mu$) \n \${:,}'.format(int(mean)), ha = 'center', va = 'top', fontweight = 'bold', fontsize = 12,
+    plt.annotate(text = 'Mean ($\mu$) \n \${:,}'.format(int(mean)), ha = 'center', va = 'top', fontweight = 'bold', fontsize = 12,
                  xy = (df['salary'].mean(), -.01), xytext = (df['salary'].mean(), -.06),
                  arrowprops=dict(width = 8, headwidth = 20, facecolor = 'red'))
 
@@ -393,12 +393,12 @@ def deviation_plot(Player, df):
     for x in [mean, salary]:
         plt.plot([x,x], [lineheight - 0.01, lineheight + 0.01], color = 'black', linewidth = 3)
 
-    plt.annotate(s = '$x_i$ = \${:,}'.format(salary), xy = (salary, 0.035), fontsize = 14, fontweight = 'bold',
+    plt.annotate(text = '$x_i$ = \${:,}'.format(salary), xy = (salary, 0.035), fontsize = 14, fontweight = 'bold',
                 ha = 'center', va = 'bottom')
     
     if mean > salary: color = 'red'
     else: color = 'blue'    
-    plt.annotate(s = '$x_i - \mu =$ \${:,}'.format(int(salary - mean)),
+    plt.annotate(text = '$x_i - \mu =$ \${:,}'.format(int(salary - mean)),
                  xy = ((mean + salary) / 2, lineheight + 0.025),
                  fontsize = 14, fontweight = 'bold', ha = 'center', va = 'bottom', color = color)
 
@@ -510,7 +510,7 @@ def predicted_probability_plot(y_true, y_proba):
 
     for i in [0,1]:
         plt.plot([i,i], [0.1, -0.1], linewidth = 3, color = 'black')
-        plt.annotate(s = str(i), xy = (i, -0.125), ha = 'center', va = 'top', fontsize = 12, fontweight = 'bold')
+        plt.annotate(text = str(i), xy = (i, -0.125), ha = 'center', va = 'top', fontsize = 12, fontweight = 'bold')
 
     plt.title("Predicted Probabilities")
 
