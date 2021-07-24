@@ -31,7 +31,7 @@ Read the squirrel census data (2018_Central_Park_Squirrel_Census_-_Squirrel_Data
 
 1. For what proportion of encounters was it the case that the squirrel was seen approaching (as indicated in the `Approaches` column)?
 2. Build a 95% confidence interval for the proportion of squirrel encounters where the squirrel approaches. What is the margin of error of this confidence interval?
-3. Build a 95% confidence interval for the proportion of squirrel encounters where the squirrel is seen running (as indicated in the `Running` column). What is the margin of error of this confidence interval? How does the margin of error in this case differ from the margin of error the previous question? Why does this happen?
+3. Build a 95% confidence interval for the proportion of squirrel encounters where the squirrel is seen running (as indicated in the `Running` column). What is the margin of error of this confidence interval? How does the margin of error in this case differ from the margin of error in the previous question? Why does this happen?
 
 For the next set of questions, divide the data into encounters into morning encounters and afternoon encounters using the following code:  
 `am_squirrels = squirrels[squirrels['Shift'] == 'AM']`  
