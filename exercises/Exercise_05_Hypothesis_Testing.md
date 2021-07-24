@@ -50,6 +50,8 @@ Read in this data as a dataframe named *crashes*.
 
 6. State your conclusion.
 
+7. Repeat this test, but use a permutation test this time. How do your results compare to the t-test?
+
 ### Part 4: Russia Constitutional Referendum
 
 A 2016 paper published in the Annals of Applied Statistics [(https://projecteuclid.org/euclid.aoas/1458909907)](https://projecteuclid.org/euclid.aoas/1458909907)  suggests that election falsification can be indicated by the presence of higher-than-usual reported number of integer results. The paper suggests that this may be due to the well-known psychological phenomenon of attraction to round numbers.
