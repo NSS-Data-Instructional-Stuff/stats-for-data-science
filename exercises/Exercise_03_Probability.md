@@ -35,7 +35,7 @@ c. Eighteen fair dice are tossed independently and at least three “6”s appea
 ### Part 3: Binomial Distribution - Conceptual
 1. Using what you know about the variance of a binomial random variable, which situation do you think would require a larger sample size to accurately estimate? Why?  
 	a. The proportion of voters who will vote for candidate A in an upcoming election, where you know that it is a close race between candidate A and candidate B.  
-	b. The proportion of people who will click on an ad on your company's website, when you know that historically, the proportion of people clicking on ads is is very low (< 2%).
+	b. The proportion of people who will click on an ad on your company's website, when you know that historically, the proportion of people clicking on ads is very low (< 2%).
 
 2. The binomial distribution gives the probability of a particular number of successes. If instead of counting the total number of successes, you were looking at the _proportion_ of successes (total number of successes / number of trials), what happens to the variance as the number of trials increases (keeping the probability of success fixed)?
 
@@ -49,7 +49,7 @@ c. Eighteen fair dice are tossed independently and at least three “6”s appea
 	a. If a single man is chosen at random, what is the probability that his height is less than 66 inches tall?  
 	b. If a single man in chosen at random, what is the probability that his height is greater than 72 inches tall?  
 	c. If a single man is chosen at random, what is the probability that his height is between 68 and 72 inches?  
-	d. If two men are chosen at random, what is the probability that both of them are between 68 and 72 inches tall? (Hint: You'll need to use your answer from part a. plus the binomial distribution to answer this.)  
+	d. If two men are chosen at random, what is the probability that both of them are between 68 and 72 inches tall? (Hint: You'll need to use your answer from the previous part plus the binomial distribution to answer this.)  
 	e. If twenty-five men are chosen at random, what is the probability that all of them are between 68 and 72 inches tall?   
 	f. Challenge Question - If two men are chosen at random, what is the probability that their __mean__ height is between 68 and 72 inches tall? (Hint: You'll probably have to simulate this to get an approximate answer. Similar to what we did to generate binomial random variables, we can generate normal random variables using `norm.rvs()`. For example, `norm.rvs(loc = 70, scale = 3, size = 2)` will generate two observations from a normal random variable with mean 70 and standard deviation 3.)  
 	g. Challenge Question, Part 2 - If twenty-five men are chosen at random, what is the probability that their __mean__ height is between 68 and 72 inches tall?
