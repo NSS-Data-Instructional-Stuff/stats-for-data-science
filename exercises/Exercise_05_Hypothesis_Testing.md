@@ -48,7 +48,7 @@ Read in this data as a dataframe named *crashes*.
 
 5. What p-value did you get?
 
-6. State your conclusion.
+6. State your conclusion at the 0.05 significance level.
 
 7. Repeat this test, but use a permutation test this time. How do your results compare to the t-test?
 
@@ -71,7 +71,7 @@ The final column, which is what we are most interested in, is the decimal value 
 1. What proportion of the time would you expect the decimal part of random number rounded in the manner as above to be 0?
 2. Create a bar chart showing the distribution of the occurences of each digit in the decimal column of the dataset. That is, you should have a bar for 0, 1, 2, 3, ..., 9. What do you notice from your bar plot?
 3. Assume, as a null hypothesis that each digit is equally likely to appear as the decimal for any polling location (i.e., the probability of the decimal being 0 is 0.1). Under the assumption of this null hypothesis, what is the probability of seeing as extreme a proportion of 0's in the decimal position as was observed in the referendum?
-4. Does the result of this hypothesis test call into question to reported results of this referendum?
+4. Does the result of this hypothesis test call into question to reported results of this referendum? Use the 0.05 significance level.
 
 ### Part 5: Late Night Hit and Runs
 You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
@@ -88,4 +88,4 @@ Read in this data as a dataframe named *hit_and_run*.
 
 4. What p-value did you get?
 
-5. State your conclusion.
+5. State your conclusion at the 0.05 significance level.
