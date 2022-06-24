@@ -1,23 +1,6 @@
 # Week 1 Exercises: Statistics for Data Science
 
-### Part 1: Library Circulation 
-
-The file physical_circulation.csv contains the total physical circulation (checkouts and renewals) at each branch of the Nashville Public Library.
-
-Read in this file as a dataframe named *circulation*.
-
-1. Find the following:
-* mean circulation
-* median circulation
-* min, max, and range
-* the 10% trimmed mean
-* standard deviation
-
-2. Plot the distribution of circulation numbers. Describe the shape of the distribution. Is it symmetric? left-skewed? right-skewed? How many modes does it have?
-
-3. Would you consider any branches to be outliers?
-
-### Part 2: Metro Government Salaries
+### Part 1: Metro Government Salaries
 
 The file General_Government_Employees_Titles_and_Base_Annual_Salaries.csv contains the base annual salary of all Metro Government employees.
 
@@ -35,12 +18,26 @@ Read in this dataset as a dataframe named *salaries*.
 
 6. Find the standard deviation of salaries, and use this to compute z-scores for each observation. Inspect the results. Do you find anything interesting?
 
+### Part 2: Temperatures 
+
+The files BNA_temps.csv and LAX_temps.csv contain the daily high (TMAX) and low (TMIN) temperatures recorded at BNA and LAX airports, respectively, for the years 2012 through 2018.
+
+Read in these file as dataframes named *bna* and *lax*.
+
+1. How do the mean high temperatures compare for BNA and LAX? What about the medians?
+
+2. Inspect the histograms for TMAX for both BNA and LAX. How would you describe these distributions (are they symmetric? are they skewed?) How do the distributions compare?
+
+3. Before doing any computations, think about whether you expect the high temperatures for BNA or LAX to have the same standard deviation or whether you expect one to have higher standard deviation than the other. Then, compute the standard deviations and see if you were correct.
+
+4. Look at the boxplot of high temperatures by month for each airport. What do you notice?
+
 ### Part 3: Conceptual 
 1. In what scenarios might the mean of a dataset be significantly lower than the median? Can you come up with any examples of such a distribution?
 
 2. Can you come up with an example of a distribution that has a median of 0 but a nonzero mean?
 
-3. You are analyzing the housing market in Davidson County. You notice that there are some very expensive homes and are afraid that including these homes might skew your analysis. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis? What alternatives do you have if you do not wish to drop any observations?
+3. You are analyzing the housing market in Davidson County. You notice that there are some very expensive homes and are afraid that including these homes might skew your analysis. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have? What alternatives do you have if you do not wish to drop any observations?
 
 4. You are analyzing daily stock market returns. You are considering dropping the top 1% and bottom 1% of the observations prior to your analysis. What impacts might this have on your analysis?
 
