@@ -1,6 +1,20 @@
 # Week 3 Exercises: Statistics for Data Science
 
-### Part 1:  Binomial Distribution
+### Part 1: Probability Calculations
+1. You randomly select a card from a [standard 52-card deck of playing cards](https://en.wikipedia.org/wiki/Standard_52-card_deck).
+	a. What is the probability that you select a Jack?
+	b. What is the probability that you select a face card (Jack, Queen, or King)?
+	c. What is the probability that you select a Jack, given that you selected a face card? Are selecting a Jack and selecting a face card independent or dependent events?
+	d. What is the probability that you select a diamond?
+	e. What is the probability that you select a Jack, given that you selected a diamond? Are selecting a Jack and selecting a diamond independent or dependent events? 
+
+2. Say that there is a disease that is carried by 0.1% of the population. A test is developed which gives a positive result 98% of the time when a person has the disease. It also gives a positive result 3% of the time when a person does not have the disease. 
+	a. What is the probability of a person having the disease and getting a positive result? (Hint: Use the formula for the joint probability which uses the conditional probability)
+	b. What is the probability of a person not having the disease and getting a positive result?
+	c. What is the probability of a person getting a positive result? (Hint: Add the probabilities from the previous two questions)
+	d. If you get tested and get a positive result, what is the probability that you have the disease? (Hint: Use Bayes' Theorem) 
+
+### Part 2:  Binomial Distribution
 According to Forbes [(https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10)](https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10), 78% of American workers live paycheck-to-paycheck.
 
 1. You take a random sample of 10 American workers.  
@@ -23,7 +37,7 @@ According to Forbes [(https://www.forbes.com/sites/zackfriedman/2019/01/11/live-
 
 5. What do you notice happens as the size of your sample increases?
 
-### Part 2: The Newton Problem 
+### Part 3: The Newton Problem 
 Now, you will attempt to outdo Isaac Newton. See this video by Vsauce 2 for an entertaining description and analysis of the problem: [https://www.youtube.com/watch?v=RFlTawWwLZc](https://www.youtube.com/watch?v=RFlTawWwLZc). As described in the video, this is a problem which Isaac Newton got wrong. More precisely, he got the correct calculations, but his explanation was off. To be fair to Newton, the machinery of probability theory had not been developed yet in his time.
 
 Use the binomial distribution to answer this question.
@@ -32,14 +46,14 @@ a. Six fair dice are tossed independently and at least one “6” appears.
 b. Twelve fair dice are tossed independently and at least two “6”s appear.  
 c. Eighteen fair dice are tossed independently and at least three “6”s appear.  
 
-### Part 3: Binomial Distribution - Conceptual
+### Part 4: Binomial Distribution - Conceptual
 1. Using what you know about the variance of a binomial random variable, which situation do you think would require a larger sample size to accurately estimate? Why?  
 	a. The proportion of voters who will vote for candidate A in an upcoming election, where you know that it is a close race between candidate A and candidate B.  
 	b. The proportion of people who will click on an ad on your company's website, when you know that historically, the proportion of people clicking on ads is very low (< 2%).
 
 2. The binomial distribution gives the probability of a particular number of successes. If instead of counting the total number of successes, you were looking at the _proportion_ of successes (total number of successes / number of trials), what happens to the variance as the number of trials increases (keeping the probability of success fixed)?
 
-### Part 4: The Normal Distribution
+### Part 5: The Normal Distribution
 1. Using a standard normal distribution (mean 0, standard deviation 1), answer the following questions.  
 	a. What percentage of outcomes are within one standard deviation of the mean?  
 	b. What percentage of outcomes are within two standard deviations of the mean?  
