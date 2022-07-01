@@ -1,5 +1,7 @@
 Week 1:
 	Day 1:
+		* Slides 0 - Stats for DS Intro [Michael]
+		* Anaconda/Jupyter Orientation [Dibran]
 		* Slides_01a_Introduction_to_Statistics.pdf [Michael]
 		* Slides_01b_What_is_Data.pdf [Michael]
 		* Notebook_01_Exploratory_Data_Analysis_Part_1_Single_Variable.ipynb (Through Categorical Variables) [Dibran]
@@ -25,7 +27,7 @@ Week 3:
 		
 	Day 2:
 		* Slides 03 Probability Part 2 Random Variables.pdf [Michael]
-		* Notebook 03 Probability Calculations Binomial Normal.ipynb [Dibran]
+		* Notebook 03 Probability Calculations Binomial Normal.ipynb [Michael]
 		* Exercises_03_Probability.pdf
 		
 Week 4:
