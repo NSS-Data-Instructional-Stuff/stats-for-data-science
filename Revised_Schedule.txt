@@ -6,7 +6,7 @@ Week 1:
 		
 	Day 2:
 		* Notebook_01_Exploratory_Data_Analysis_Part_2_Single_Variable.ipynb (Through the end) [Dibran]
-		* Exercise_01_Single_Variable_EDA.pdf
+		* Exercise_01_Single_Variable_EDA.md
 		
 Week 2:
 	Day 1:
@@ -15,7 +15,7 @@ Week 2:
 		
 	Day 2:
 		* Notebook 02 Exploratory Data Analysis-Part 2 Two Variable.ipynb [Michael]
-		* Exercise_02_Multi-Variable_EDA.pdf - Time to work on the exercises if all goes well.
+		* Exercise_02_Multi-Variable_EDA.md
 
 Week 3:
 	Day 1:
@@ -38,14 +38,14 @@ Week 4:
 		* Slides 04b Part 2 Estimation Cautions.pdf [Dibran]
 		* Demo Notebook (If there's time) [Dibran]
 		* Slides - The Bootstrap [Michael]
-		* Notebook - Estimation Part 2 the Bootstrap.ipynb [Mahesh]
+		* Notebook - Estimation Part 2 the Bootstrap.ipynb [Michael]
 		* Exercises - Estimation
 
 Week 5:
 	Day 1:
 		* Review Exercise_04 [Michael]
 		* Slides 05a Hypothesis Testing 01 Introduction.pdf [Dibran]
-		* Notebook 05a Hypothesis Testing Part 1.ipynb [Dibran]
+		* Notebook 05a Hypothesis Testing Part 1.ipynb [Michael]
 	
 	Day 2:
 		* Notebook 05c Hypothesis Testing Part 3 Effect Size and Power.ipynb [Michael]
