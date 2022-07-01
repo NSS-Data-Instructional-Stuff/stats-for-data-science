@@ -32,43 +32,45 @@ Week 4:
 	Day 1:
 		* Review Exercises_03 [Dibran]
 		* Slides - Sampling Distributions / Confidence Intervals [Michael]
-		* Notebook 04 Estimation Part 1.ipynb [Mahesh]
+		* Notebook 04 Estimation Part 1.ipynb [Dibran]
 		
 	Day 2:
-		* Slides - Sampling Distributions, Part 2 (Categorical Variables) [Michael]
-		* Continue Notebook 04 Estimation Part 1.ipynb [Mahesh]
 		* Slides 04b Part 2 Estimation Cautions.pdf [Dibran]
-		* Demo Notebook (Only if time) [Dibran]
+		* Demo Notebook (If there's time) [Dibran]
+		* Slides - The Bootstrap [Michael]
+		* Notebook - Estimation Part 2 the Bootstrap.ipynb [Mahesh]
 		* Exercises - Estimation
 
 Week 5:
 	Day 1:
 		* Review Exercise_04 [Michael]
-		* Slides - The Bootstrap [Michael]
-		* Notebook - Estimation Part 2 the Bootstrap.ipynb [Mahesh]
-	
-	Day 2:
 		* Slides 05a Hypothesis Testing 01 Introduction.pdf [Dibran]
 		* Notebook 05a Hypothesis Testing Part 1.ipynb [Dibran]
+	
+	Day 2:
+		* Notebook 05c Hypothesis Testing Part 3 Effect Size and Power.ipynb [Michael]
 		* Slides 05b Permutation Tests [Michael]
-		* Notebook 05b Permutation Tests [Michael]
+		* Notebook 05b Permutation Tests [Dibran]
 		* Exercise 05 Hypothesis Testing.pdf
 		
 Week 6: 
 	Day 1:
-		* Review Exercise_05 [Mahesh]
-		* Notebook 05c Hypothesis Testing Part 3 Effect Size and Power.ipynb [Mahesh]
+		* Review Exercise_05 [Dibran]
+		* Slides_06_Linear_Regression_Introduction.pdf [Michael]
+		* Notebook_Linear_Regression_Part_1.ipynb [Dibran]
 		
 	Day 2:
-		* Slides_06_Linear_Regression.pdf [Mahesh]
-		* Notebook 06a Linear Regression.ipynb [Michael]
-		* Exercise 06 Linear and Logistic Regression.pdf Part 1
+		* Slides_06b_Linear_Regression_Continued.pdf [Dibran]
+		* Notebook_Linear_Regression_Part_2.ipynb [Michael]
+		* Exercise 06 Linear Regression.pdf Part 1
 		
 Week 7:
 	Day 1:
-		* Notebook 06b Logistic Regression.ipynb [Mahesh]
-		* Exercise 06 Linear and Logistic Regression.pdf Part 2
+		* Review Exercise 06 [Michael]
+		* Slides 07_Logistic Regression [Michael]
+		* Notebook 07 Logistic Regression.ipynb [Dibran]
+		* Exercise 07 Logistic Regression.pdf Part 2
 		
 	Day 2:
-		* Review Exercise 06 [Michael]
+		* Review Exercise 07 [Dibran]
 		* Assessment
