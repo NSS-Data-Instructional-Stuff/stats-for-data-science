@@ -37,22 +37,23 @@ Week 4:
 		* Notebook 04 Estimation Part 1.ipynb [Dibran]
 		
 	Day 2:
-		* Slides 04b Part 2 Estimation Cautions.pdf [Dibran]
+		* Slides 04b Part 2 Estimation Cautions.pdf [Michael]
 		* Demo Notebook (If there's time) [Dibran]
 		* Slides - The Bootstrap [Michael]
-		* Notebook - Estimation Part 2 the Bootstrap.ipynb [Michael]
+		* Notebook - Estimation Part 2 the Bootstrap.ipynb [Dibran]
 		* Exercises - Estimation
 
 Week 5:
 	Day 1:
 		* Review Exercise_04 [Michael]
-		* Slides 05a Hypothesis Testing 01 Introduction.pdf [Dibran]
-		* Notebook 05a Hypothesis Testing Part 1.ipynb [Michael]
+		* Slides 05a Hypothesis Testing 01 Introduction.pdf [Michael]
+		* Notebook 05a Hypothesis Testing Part 1.ipynb [Dibran]
 	
 	Day 2:
-		* Notebook 05c Hypothesis Testing Part 3 Effect Size and Power.ipynb [Michael]
+
 		* Slides 05b Permutation Tests [Michael]
 		* Notebook 05b Permutation Tests [Dibran]
+		* Notebook 05c Hypothesis Testing Part 3 Effect Size and Power.ipynb [Michael]
 		* Exercise 05 Hypothesis Testing.pdf
 		
 Week 6: 
