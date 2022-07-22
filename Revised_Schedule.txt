@@ -63,8 +63,8 @@ Week 6:
 		* Notebook_Linear_Regression_Part_1.ipynb [Dibran]
 		
 	Day 2:
-		* Slides_06b_Linear_Regression_Continued.pdf [Dibran]
-		* Notebook_Linear_Regression_Part_2.ipynb [Michael]
+		* Slides_06b_Linear_Regression_Continued.pdf [Michael]
+		* Notebook_Linear_Regression_Part_2.ipynb [Dibran]
 		* Exercise 06 Linear Regression.pdf Part 1
 		
 Week 7:
