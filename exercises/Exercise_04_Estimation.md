@@ -40,3 +40,16 @@ For the next set of questions, divide the data into encounters into morning enco
 4. First, let's compare the morning and evening encounters with respect to the `Foraging` column. For what proportion of morning encounters was the squirrel seen foraging?  For what proportion of afternoon encounters was the squirrel seen foraging?
 5. Build two confidence intervals, one for the morning encounters and one for the afternoon encounters, for the proportion of encounters where the squirrel was seen foraging. Based on these confidence intervals, do you think it is safe to conclude that for encounters in the afternoon, the squirrel is more likely to be foraging compared to encounters in the morning?
 6. Repeat the previous question, but for the `Runs from` column.
+
+### Part 4: Bootstrap Confidence Intervals
+1. The file nssrn contains the annual earnings of a sample of 30 male and 30 female nurses who participated in the National Sample Survey of Registered Nurses. The nurses in the sample all have a bachelor’s degree and less than five years of work experience.    
+  a. Create a bootstrap 95% confidence interval for the overall median annual earnings.  
+  b. Create a bootstrap 95% confidence interval for the difference in median annual earnings between male and female nurses. If I claim that the median annual earnings is no different from male and female nurses, does this confidence interval contradict my claim?
+
+2. In week 2, we saw that there was a very small observed correlation between max temperature today and max temperature 3 months ago using data from BNA. (This data was contained in the file shifted_BNA_temps.csv). Create a 95% bootstrap confidence interval for the correlation between max temperature today and max temperature 3 months ago at BNA. If I claim that there is zero correlation between these values (and that the observed positive correlation could be explained due to chance), does the confidence interval contradict my claim?
+
+Challenge Question: Recall that for events A and B, the pointwise mutual information of A and B is given by PMI(A,B) = log(P(A and B) / (P(A)*P(B))). Events are independent if and only if their pointwise mutual information is zero.
+
+a. Using the squirrels dataset, find a 95% confidence interval for the pointwise mutual information of the events A: "a squirrel is black" and B: "a squirrel runs away". Based on this confidence interval, does it seem like there is enough evidence to conclude that these are dependent events? Hints: You can use the numpy `log` function to calculate the logarithm (`np.log`). If you are using the crosstab function from pandas, you may need to convert your Series to lists when resampling. This can be done using the `.tolist()` method. For example, `squirrels.loc[resample]['Primary Fur Color'].tolist()` will convert the Series to a list object.
+
+b. Using the squirrels dataset, find a 95% confidence interval for the pointwise mutual information of the events A: "a squirrel is black" and B: "a squirrel is climbing". Based on this confidence interval, does it seem like there is enough evidence to conclude that these are dependent events?
