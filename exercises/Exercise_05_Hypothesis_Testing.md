@@ -59,27 +59,8 @@ The final column, which is what we are most interested in, is the decimal value 
 3. Assume, as a null hypothesis that each digit is equally likely to appear as the decimal for any polling location (i.e., the probability of the decimal being 0 is 0.1). Under the assumption of this null hypothesis, what is the probability of seeing as extreme a proportion of 0's in the decimal position as was observed in the referendum?
 4. Does the result of this hypothesis test call into question to reported results of this referendum? Use the 0.05 significance level.
 
-### Part 4: Late Night Hit and Runs
-You speculate that crashes ocurring late at night are more likely to be hit and run crashes. For purposes of this exercise, we have defined "late at night" to mean occurring between midnight and 5:00 AM.
-
-The file hit_and_run_sample.csv contains a random sample of 50 car crashes that took place in Davidson County.
-
-Read in this data as a dataframe named *hit_and_run*.
-
-1. Find the proportion of hit and run crashes for both late at night and not late at night. What is the observed difference between these two?
-
-2. State the null and alternative hypothesis.
-
-3. Conduct a fisher exact test to test your hypothesis.
-
-4. What p-value did you get?
-
-5. State your conclusion at the 0.05 significance level.
-
-### Part 5: Permutation Testing
-1. The file nssrn contains the annual earnings of a sample of 30 male and 30 female nurses who participated in the National Sample Survey of Registered Nurses. The nurses in the sample all have a bachelor’s degree and less than five years of work experience. Perform a permutation hypothesis test to test the hypothesis that the distribution of male nurse salaries are distributed differently than female nurse salaries.
-
-2. In this question, we'll use the penguins dataset. Read this into a DataFrame named `penguins`. We're only going to focus on two of the species, adelie and chinstrap, so filter down to these two using the following code:
+### Part 4: Permutation Testing
+1. In this question, we'll use the penguins dataset. Read this into a DataFrame named `penguins`. We're only going to focus on two of the species, adelie and chinstrap, so filter down to these two using the following code:
 ```
 penguins = penguins[penguins['species'].isin(['Adelie', 'Chinstrap'])]
 ```
@@ -89,7 +70,7 @@ b. Let's test the hypothesis that the distribution of body masses is different f
 
 c. Now, instead of using the difference in means, use the difference in standard deviations. What conclusion do you reach now?
 
-3. In this question and the next, you'll be looking at shooting data from NBA games that took place during the 2014/2015 NBA season. We'll be working with data from one particular player, Steph Curry, who is widely regarded as one of the greatest shooters in NBA history. You have been provided a dataset, curry_shooting.csv, which contains all shots that Steph Curry took during the 2014/2015 NBA season. Read this dataset into a DataFrame named `shots`.
+2. In this question and the next, you'll be looking at shooting data from NBA games that took place during the 2014/2015 NBA season. We'll be working with data from one particular player, Steph Curry, who is widely regarded as one of the greatest shooters in NBA history. You have been provided a dataset, curry_shooting.csv, which contains all shots that Steph Curry took during the 2014/2015 NBA season. Read this dataset into a DataFrame named `shots`.
 
 The SHOT_RESULT column indicates whether a particular shot was successful, and the PERIOD column shows which quarter (1-4) or overtime period (5) the shot took place. In this question, we'll explore whether the PERIOD and SHOT_RESULT columns are independent or dependent.
 
