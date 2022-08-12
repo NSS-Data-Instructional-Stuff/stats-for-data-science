@@ -28,3 +28,12 @@ e. Finally, test whether the coefficients for interaction terms between flipper 
 f. Take the model that uses flipper length, sex, and species. What does this model estimate for the average body mass of a male Gentoo penguin with flipper length of 210 mm? Also, find a confidence interval for this estimate and a prediction interval.
 
 g. Take the model that uses flipper length, sex, and species. What does this model estimate for the average body mass of a female Adelie penguin with flipper length of 190 mm? Also, find a confidence interval for this estimate and a prediction interval.
+
+### Question 3: King County Home Prices
+The file kc_sample.csv contains a sample of 1000 homes that were sold in King County, Washington. 
+
+a. Build a linear regression model with target variable `price` and predictor variable `sqft_living`. How well does this model perform? Plot confidence intervals and prediction intervals against your dataset. Check the residuals. What problems might be present in this model?
+
+b. Modify your model so that your target variable is the log of the price. How does this model compare to your previous one.
+
+c. Add the `bedrooms` variable to your model. Look at the coefficient of the result. Do they make sense?
