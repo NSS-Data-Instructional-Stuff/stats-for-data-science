@@ -1,0 +1,462 @@
+last_name,first_name,team,position,height_inches,weight_lbs,pts_per_game,rebounds_per_game,assists_per_game,salary
+Achiuwa,Precious,Toronto Raptors,F,80,225.0,9.2,6.0,0.9,2840160
+Adams,Steven,Memphis Grizzlies,C,83,265.0,8.6,11.5,2.3,17926829
+Adebayo,Bam,Miami Heat,C-F,81,255.0,20.4,9.2,3.2,30351780
+Agbaji,Ochai,Utah Jazz,G,77,215.0,7.9,2.1,1.1,3918360
+Aldama,Santi,Memphis Grizzlies,F-C,84,215.0,9.0,4.8,1.3,2094240
+Alexander-Walker,Nickeil,Minnesota Timberwolves,G,77,205.0,6.2,1.7,1.8,5009633
+Allen,Grayson,Milwaukee Bucks,G,76,198.0,10.4,3.3,2.3,8500000
+Allen,Jarrett,Cleveland Cavaliers,C,81,243.0,14.3,9.8,1.7,20000000
+Alvarado,Jose,New Orleans Pelicans,G,72,179.0,9.0,2.3,3.0,1563518
+Anderson,Kyle,Minnesota Timberwolves,F-G,81,230.0,9.4,5.3,4.9,8780488
+Antetokounmpo,Giannis,Milwaukee Bucks,F,84,243.0,31.1,11.8,5.7,42492492
+Antetokounmpo,Thanasis,Milwaukee Bucks,F,79,219.0,1.4,1.2,0.4,1878720
+Anthony,Cole,Orlando Magic,G,75,185.0,13.0,4.8,3.9,3613680
+Anunoby,O.G.,Toronto Raptors,F,79,232.0,16.8,5.0,2.0,17357143
+Augustin,D.J.,Houston Rockets,G,71,183.0,9.5,1.8,3.9,189940
+Avdija,Deni,Washington Wizards,F,81,210.0,9.2,6.4,2.8,4916160
+Ayton,Deandre,Phoenix Suns,C,84,250.0,18.0,10.0,1.7,30913750
+Azubuike,Udoka,Utah Jazz,C-F,83,270.0,3.5,3.3,0.3,2174880
+Bagley III,Marvin,Detroit Pistons,F,82,235.0,12.0,6.4,0.9,12500000
+Baldwin Jr.,Patrick,Golden State Warriors,F,81,220.0,3.9,1.3,0.4,2226000
+Ball,LaMelo,Charlotte Hornets,G,79,180.0,23.3,6.4,8.4,8623920
+Ball,Lonzo,Chicago Bulls,G,78,190.0,11.9,5.7,6.2,19534884
+Bamba,Mo,Los Angeles Lakers,C,84,231.0,6.6,4.6,0.9,10300000
+Banchero,Paolo,Orlando Magic,F,82,250.0,20.0,6.9,3.7,11055120
+Bane,Desmond,Memphis Grizzlies,G,77,215.0,21.5,5.0,4.4,2130240
+Banton,Dalano,Toronto Raptors,F,79,204.0,4.6,1.5,1.2,1563318
+Barnes,Harrison,Sacramento Kings,F,80,225.0,15.0,4.5,1.6,18352273
+Barnes,Scottie,Toronto Raptors,F,80,225.0,15.3,6.6,4.8,7644720
+Barrett,RJ,New York Knicks,F-G,78,214.0,19.6,5.0,2.8,10900635
+Barton,Will,Toronto Raptors,G,77,181.0,6.8,2.4,2.0,432642
+Bassey,Charles,San Antonio Spurs,C-F,81,230.0,5.7,5.5,1.4,2600000
+Bates-Diop,Keita,San Antonio Spurs,F,80,229.0,9.7,3.7,1.5,1878720
+Batum,Nicolas,LA Clippers,G-F,80,230.0,6.1,3.8,1.6,10843350
+Bazley,Darius,Phoenix Suns,F,81,216.0,5.2,3.2,0.9,4264629
+Beal,Bradley,Washington Wizards,G,76,207.0,23.2,3.9,5.4,43279250
+Beasley,Malik,Los Angeles Lakers,G,76,187.0,12.7,3.5,1.5,15558035
+Beauchamp,MarJon,Milwaukee Bucks,F,79,199.0,5.1,2.2,0.7,2485200
+Bertans,Davis,Dallas Mavericks,F,82,225.0,4.6,1.2,0.5,16000000
+Beverley,Patrick,Chicago Bulls,G,74,180.0,6.2,3.7,2.9,357717
+Bey,Saddiq,Atlanta Hawks,F,79,215.0,13.8,4.7,1.5,2959080
+Birch,Khem,Toronto Raptors,C,80,233.0,2.2,1.3,0.4,6667500
+Bitadze,Goga,Orlando Magic,C-F,83,250.0,4.4,3.6,1.0,612181
+Biyombo,Bismack,Phoenix Suns,C,80,255.0,4.3,4.3,0.9,1836090
+Bogdanovic,Bogdan,Atlanta Hawks,G,77,225.0,14.0,3.1,2.8,18000000
+Bogdanovic,Bojan,Detroit Pistons,F,79,226.0,21.6,3.8,2.6,19550000
+Bol,Bol,Orlando Magic,C-F,86,220.0,9.1,5.8,1.0,2200000
+Booker,Devin,Phoenix Suns,G,77,206.0,27.8,4.5,5.5,33833400
+Boston Jr.,Brandon,LA Clippers,G,78,188.0,6.5,1.4,0.9,1563518
+Boucher,Chris,Toronto Raptors,F-C,81,200.0,9.4,5.5,0.4,12690000
+Bouknight,James,Charlotte Hornets,G,76,190.0,5.6,2.1,1.2,4362240
+Branham,Malaki,San Antonio Spurs,F,76,180.0,10.2,2.7,1.9,2925600
+Braun,Christian,Denver Nuggets,G,78,220.0,4.7,2.4,0.8,2808600
+Bridges,Mikal,Brooklyn Nets,G-F,78,209.0,20.1,4.4,3.3,20100000
+Brissett,Oshae,Indiana Pacers,F-G,79,210.0,6.1,3.4,0.7,1846738
+Brogdon,Malcolm,Boston Celtics,G,76,229.0,14.9,4.2,3.7,22600000
+Brooks,Dillon,Memphis Grizzlies,G-F,78,225.0,14.3,3.3,2.6,11400000
+Brown,Bruce,Denver Nuggets,G-F,76,202.0,11.5,4.1,3.4,6479000
+Brown,Jaylen,Boston Celtics,G-F,78,223.0,26.6,6.9,3.5,28741071
+Brown Jr.,Troy,Los Angeles Lakers,G-F,79,215.0,7.1,4.1,1.3,1836090
+Brunson,Jalen,New York Knicks,G,74,190.0,24.0,3.5,6.2,27733332
+Bryant,Thomas,Denver Nuggets,C-F,82,248.0,9.8,5.7,0.5,1836090
+Bullock,Reggie,Dallas Mavericks,G-F,78,205.0,7.2,3.6,1.4,10012800
+Burks,Alec,Detroit Pistons,G,78,214.0,12.8,3.1,2.2,10012800
+Butler,Jared,Oklahoma City Thunder,G,75,193.0,6.2,0.7,1.3,1563518
+Butler,Jimmy,Miami Heat,F,79,230.0,22.9,5.9,5.3,37653300
+Caldwell-Pope,Kentavious,Denver Nuggets,G,77,204.0,10.8,2.7,2.4,14004703
+Cancar,Vlatko,Denver Nuggets,F,80,236.0,5.0,2.1,1.3,2234359
+Capela,Clint,Atlanta Hawks,C,82,256.0,12.0,11.0,0.9,18706896
+Carey Jr.,Vernon,Washington Wizards,C,82,270.0,0.5,1.0,0.3,1782621
+Carter,Jevon,Milwaukee Bucks,G,73,200.0,8.0,2.5,2.4,2100000
+Carter Jr.,Wendell,Orlando Magic,C-F,82,270.0,15.2,8.7,2.3,14150000
+Carter-Williams,Michael,Orlando Magic,G,77,190.0,4.3,1.3,1.8,652829
+Caruso,Alex,Chicago Bulls,G,77,186.0,5.6,2.9,2.9,9030000
+Cauley-Stein,Willie,Houston Rockets,C,84,240.0,8.7,5.9,1.4,10552
+Champagnie,Justin,Boston Celtics,G-F,78,206.0,2.2,1.6,0.8,28241
+Christie,Max,Los Angeles Lakers,G,77,190.0,3.1,1.8,0.5,1017781
+Christopher,Josh,Houston Rockets,G,76,215.0,5.8,1.1,1.1,2372160
+Clarke,Brandon,Memphis Grizzlies,F,80,215.0,10.0,5.5,1.3,4343920
+Clarkson,Jordan,Utah Jazz,G,77,194.0,20.8,4.0,4.4,13340000
+Claxton,Nic,Brooklyn Nets,C,83,215.0,12.6,9.2,1.9,8500000
+Coffey,Amir,LA Clippers,G-F,79,210.0,3.4,1.1,1.1,3395062
+Collins,John,Atlanta Hawks,F-C,81,226.0,13.1,6.5,1.2,23500000
+Collins,Zach,San Antonio Spurs,F-C,83,250.0,11.6,6.4,2.9,7350000
+Conley,Mike,Minnesota Timberwolves,G,73,175.0,11.9,2.7,6.7,22680000
+Connaughton,Pat,Milwaukee Bucks,G,77,209.0,7.6,4.6,1.3,5728393
+Cooks,Xavier,Washington Wizards,F,80,183.0,3.8,3.8,0.6,140384
+Covington,Robert,LA Clippers,F,79,209.0,6.0,3.5,1.2,12307692
+Craig,Torrey,Phoenix Suns,F,79,221.0,7.4,5.4,1.5,5121951
+Crowder,Jae,Milwaukee Bucks,F,78,235.0,6.9,3.8,1.5,10183000
+Cunningham,Cade,Detroit Pistons,G,79,220.0,19.9,6.2,6.0,10552800
+Curry,Seth,Brooklyn Nets,G,73,185.0,9.2,1.6,1.6,8496500
+Curry,Stephen,Golden State Warriors,G,74,185.0,29.4,6.1,6.3,48070014
+Daniels,Dyson,New Orleans Pelicans,G,79,199.0,3.8,3.2,2.3,5508600
+Davis,Anthony,Los Angeles Lakers,F-C,82,253.0,25.9,12.5,2.6,37980720
+Davis,Johnny,Washington Wizards,G,76,195.0,5.8,2.3,1.0,4810320
+Davis,Terence,Sacramento Kings,G,76,201.0,6.7,2.2,1.0,4000000
+DeRozan,DeMar,Chicago Bulls,G-F,78,220.0,24.5,4.6,5.1,27300000
+Dedmon,Dewayne,Philadelphia 76ers,C,82,245.0,5.2,3.5,0.7,580373
+Dellavedova,Matthew,Sacramento Kings,G,75,200.0,1.5,0.4,1.3,1836090
+DiVincenzo,Donte,Golden State Warriors,G,76,203.0,9.4,4.5,3.5,4500000
+Diakite,Mamadi,Cleveland Cavaliers,F,81,228.0,2.6,1.4,0.4,1517981
+Diallo,Hamidou,Detroit Pistons,G,77,202.0,9.3,3.5,1.0,5200000
+Dieng,Gorgui,San Antonio Spurs,C,82,248.0,3.9,3.5,1.7,622582
+Dieng,Ousmane,Oklahoma City Thunder,F,81,185.0,4.9,2.7,1.2,4569840
+Dinwiddie,Spencer,Brooklyn Nets,G,77,215.0,17.3,3.4,6.5,19500000
+Doncic,Luka,Dallas Mavericks,F-G,79,230.0,32.4,8.6,8.0,37095000
+Dort,Luguentz,Oklahoma City Thunder,G,76,220.0,13.7,4.6,2.1,15277778
+Dosunmu,Ayo,Chicago Bulls,G,77,200.0,8.6,2.8,2.6,1563518
+Dozier,PJ,Sacramento Kings,G-F,78,205.0,1.4,0.9,0.6,539450
+Dragic,Goran,Milwaukee Bucks,G,76,190.0,6.3,1.4,2.6,390433
+Drummond,Andre,Chicago Bulls,C,83,279.0,6.0,6.6,0.5,3200000
+Duarte,Chris,Indiana Pacers,G,77,190.0,7.9,2.5,1.4,3936960
+Duke Jr.,David,Brooklyn Nets,G,76,204.0,3.7,1.3,0.9,28241
+Dunn,Kris,Utah Jazz,G,75,205.0,13.2,4.5,5.6,735819
+Durant,Kevin,Phoenix Suns,F,82,240.0,29.1,6.7,5.0,44119845
+Duren,Jalen,Detroit Pistons,C,83,250.0,9.1,8.9,1.1,4124280
+Eason,Tari,Houston Rockets,F,80,215.0,9.3,6.0,1.1,3309160
+Edwards,Anthony,Minnesota Timberwolves,G,76,225.0,24.6,5.8,4.4,10733400
+Edwards,Kessler,Sacramento Kings,F,79,203.0,2.8,1.7,0.6,1637966
+Embiid,Joel,Philadelphia 76ers,C-F,84,280.0,33.1,10.2,4.2,33616770
+Eubanks,Drew,Portland Trail Blazers,F-C,82,245.0,6.6,5.4,1.3,1836090
+Fernando,Bruno,Atlanta Hawks,F-C,82,240.0,3.9,3.5,0.8,2717391
+Finney-Smith,Dorian,Brooklyn Nets,F,79,220.0,8.3,4.8,1.5,12939648
+Flynn,Malachi,Toronto Raptors,G,73,175.0,4.6,1.4,1.3,2145720
+Fontecchio,Simone,Utah Jazz,F,79,209.0,6.3,1.7,0.8,3205128
+Fournier,Evan,New York Knicks,G-F,78,205.0,6.1,1.8,1.3,18000000
+Fox,De'Aaron,Sacramento Kings,G,75,185.0,25.0,4.2,6.1,28103550
+Fultz,Markelle,Orlando Magic,G,76,209.0,14.0,3.9,5.7,16500000
+Gabriel,Wenyen,Los Angeles Lakers,F,81,205.0,5.5,4.2,0.5,1878720
+Gafford,Daniel,Washington Wizards,F-C,82,234.0,9.0,5.6,1.1,1930681
+Gallinari,Danilo,Washington Wizards,F,82,236.0,15.6,4.8,1.9,6479000
+Garland,Darius,Cleveland Cavaliers,G,73,192.0,21.6,2.7,7.8,8920795
+Garuba,Usman,Houston Rockets,F,80,229.0,3.0,4.1,0.9,2471160
+Garza,Luka,Minnesota Timberwolves,C,82,243.0,6.5,2.3,0.6,925258
+Gay,Rudy,Utah Jazz,F-G,80,250.0,5.2,2.9,1.0,6184500
+George,Paul,LA Clippers,F,80,220.0,23.8,6.1,5.1,42492492
+Gibson,Taj,Washington Wizards,F,81,232.0,3.4,1.9,0.7,1836090
+Giddey,Josh,Oklahoma City Thunder,G,80,216.0,16.6,7.9,6.2,6287280
+Gilgeous-Alexander,Shai,Oklahoma City Thunder,G,78,195.0,31.4,4.8,5.5,30913750
+Gill,Anthony,Washington Wizards,F,80,230.0,3.3,1.7,0.6,1836090
+Gobert,Rudy,Minnesota Timberwolves,C,85,258.0,13.4,11.6,1.2,38172414
+Goodwin,Jordan,Washington Wizards,G,75,200.0,6.6,3.3,2.7,900000
+Gordon,Aaron,Denver Nuggets,F,80,235.0,16.3,6.6,3.0,19690909
+Gordon,Eric,LA Clippers,G,75,215.0,12.4,1.9,2.7,19568360
+Graham,Devonte',San Antonio Spurs,G,73,195.0,7.4,1.7,2.7,11550000
+Grant,Jerami,Portland Trail Blazers,F,80,210.0,20.5,4.5,2.4,20955000
+Green,Danny,Cleveland Cavaliers,G,78,215.0,5.5,1.3,0.5,2000000
+Green,Draymond,Golden State Warriors,F,78,230.0,8.5,7.2,6.8,25806468
+Green,JaMychal,Golden State Warriors,F-C,81,227.0,6.4,3.6,0.9,1836090
+Green,Jalen,Houston Rockets,G,76,186.0,22.1,3.7,3.7,9441840
+Green,Javonte,Chicago Bulls,G,77,205.0,5.2,2.8,0.7,1815677
+Green,Jeff,Denver Nuggets,F,80,235.0,7.8,2.6,1.2,4500000
+Green,Josh,Dallas Mavericks,G,79,200.0,9.1,3.0,1.7,3098400
+Griffin,AJ,Atlanta Hawks,F,78,220.0,8.9,2.1,1.0,3536160
+Griffin,Blake,Boston Celtics,F,81,250.0,4.1,3.8,1.5,1836090
+Grimes,Quentin,New York Knicks,G,77,210.0,11.3,3.2,2.1,2277000
+Hachimura,Rui,Los Angeles Lakers,F,80,230.0,11.2,4.5,0.9,6263188
+Haliburton,Tyrese,Indiana Pacers,G,77,185.0,20.7,3.7,10.4,4215120
+Hampton,R.J.,Detroit Pistons,G,76,175.0,6.4,1.9,1.1,485403
+Hardaway Jr.,Tim,Dallas Mavericks,G-F,77,205.0,14.4,3.5,1.8,19602273
+Harden,James,Philadelphia 76ers,G,77,220.0,21.0,6.1,10.7,33000000
+Hardy,Jaden,Dallas Mavericks,G,75,198.0,8.8,1.9,1.4,1017781
+Harrell,Montrezl,Philadelphia 76ers,F-C,79,240.0,5.6,2.8,0.6,2463490
+Harris,Gary,Orlando Magic,G,76,210.0,8.3,2.0,1.2,13000000
+Harris,Joe,Brooklyn Nets,G-F,78,220.0,7.6,2.2,1.4,18642857
+Harris,Tobias,Philadelphia 76ers,F,79,226.0,14.7,5.7,2.5,37633050
+Harrison,Shaquille,Portland Trail Blazers,G,76,195.0,8.8,4.4,6.0,12260
+Hart,Josh,New York Knicks,G,76,215.0,9.8,7.8,3.8,12960000
+Hartenstein,Isaiah,New York Knicks,C-F,84,250.0,5.0,6.5,1.2,7804879
+Haslem,Udonis,Miami Heat,F,79,235.0,3.9,1.6,0.0,1836090
+Hauser,Sam,Boston Celtics,F,79,217.0,6.4,2.6,0.9,1563518
+Hayes,Jaxson,New Orleans Pelicans,C-F,84,220.0,5.0,2.8,0.7,6803012
+Hayes,Killian,Detroit Pistons,G,77,195.0,10.3,2.9,6.2,5572680
+Hayward,Gordon,Charlotte Hornets,F,79,225.0,14.7,4.3,4.1,30075000
+Hernangomez,Willy,New Orleans Pelicans,C-F,83,250.0,6.9,4.7,0.9,2443581
+Herro,Tyler,Miami Heat,G,77,195.0,20.1,5.4,4.2,5722116
+Hield,Buddy,Indiana Pacers,G,76,220.0,16.8,5.0,2.8,22768890
+Highsmith,Haywood,Miami Heat,F,77,220.0,4.4,3.5,0.8,1752638
+Hill,George,Indiana Pacers,G,76,188.0,5.0,1.8,2.4,4000000
+Holiday,Aaron,Atlanta Hawks,G,72,185.0,3.9,1.2,1.4,1836090
+Holiday,Jrue,Milwaukee Bucks,G,77,205.0,19.3,5.1,7.4,33665040
+Holiday,Justin,Dallas Mavericks,F-G,78,180.0,4.5,1.2,0.9,569821
+Holmes,Richaun,Sacramento Kings,F,80,235.0,3.1,1.9,0.2,11215260
+Holmgren,Chet,Oklahoma City Thunder,C-F,85,195.0,,,,9891240
+Horford,Al,Boston Celtics,C-F,81,240.0,9.8,6.2,3.0,26500000
+Horton-Tucker,Talen,Utah Jazz,G,76,234.0,10.7,3.2,3.8,10260000
+House Jr.,Danuel,Philadelphia 76ers,F-G,78,220.0,4.8,1.7,0.8,4105000
+Houstan,Caleb,Orlando Magic,G,80,205.0,3.8,1.9,0.6,2000000
+Huerter,Kevin,Sacramento Kings,G-F,79,198.0,15.2,3.3,2.9,14508929
+Hunter,De'Andre,Atlanta Hawks,F-G,80,221.0,15.4,4.2,1.4,9835881
+Hyland,Bones,LA Clippers,G,74,169.0,11.8,2.4,3.1,2201520
+Iguodala,Andre,Golden State Warriors,G-F,78,215.0,2.1,2.1,2.4,1836090
+Ingles,Joe,Milwaukee Bucks,F-G,81,220.0,6.9,2.8,3.3,6479000
+Ingram,Brandon,New Orleans Pelicans,F,80,190.0,24.7,5.5,5.8,31650600
+Irving,Kyrie,Dallas Mavericks,G,74,195.0,27.1,5.1,5.5,38917057
+Isaac,Jonathan,Orlando Magic,F,82,230.0,5.0,4.0,0.5,17400000
+Ivey,Jaden,Detroit Pistons,G,76,195.0,16.3,3.9,5.2,7252200
+Jackson,Isaiah,Indiana Pacers,F,81,205.0,7.2,4.5,0.8,2573760
+Jackson,Reggie,Denver Nuggets,G,74,208.0,10.2,2.1,3.4,580373
+Jackson Jr.,Jaren,Memphis Grizzlies,F-C,82,242.0,18.6,6.8,1.0,28946605
+James,LeBron,Los Angeles Lakers,F,81,250.0,28.9,8.3,6.8,44474988
+Jeffries,DaQuan,New York Knicks,G-F,77,222.0,3.8,1.9,0.6,300000
+Jerome,Ty,Golden State Warriors,G-F,77,195.0,6.9,1.7,3.0,4220057
+Joe,Isaiah,Oklahoma City Thunder,G,75,165.0,9.5,2.4,1.2,1836090
+Johnson,Cameron,Brooklyn Nets,F,80,210.0,15.5,4.4,1.9,5887899
+Johnson,Jalen,Atlanta Hawks,F,80,219.0,5.6,4.0,1.2,2792640
+Johnson,James,Indiana Pacers,F,79,240.0,2.8,1.7,0.8,590926
+Johnson,Keldon,San Antonio Spurs,F-G,77,220.0,22.0,5.0,2.9,3873025
+Johnson,Keon,Portland Trail Blazers,G,75,185.0,4.7,1.1,1.5,2681040
+Jokic,Nikola,Denver Nuggets,C,83,284.0,24.5,11.8,9.8,33047804
+Jones,Carlik,Chicago Bulls,G,72,174.0,2.9,0.7,0.9,357717
+Jones,Damian,Utah Jazz,C,83,245.0,3.5,3.0,0.4,2298385
+Jones,Herbert,New Orleans Pelicans,F,79,206.0,9.8,4.1,2.5,1785000
+Jones,Kai,Charlotte Hornets,C-F,83,221.0,3.4,2.7,0.3,2909040
+Jones,Tre,San Antonio Spurs,G,73,185.0,12.9,3.6,6.6,1782621
+Jones,Tyus,Memphis Grizzlies,G,74,196.0,10.3,2.5,5.2,1500000
+Jones Jr.,Derrick,Chicago Bulls,F,78,210.0,5.0,2.4,0.5,3200000
+Jordan,DeAndre,Denver Nuggets,C,83,265.0,5.1,5.2,0.9,1836090
+Joseph,Cory,Detroit Pistons,G,75,200.0,6.9,1.7,3.5,5155500
+Jovic,Nikola,Miami Heat,F,82,205.0,5.5,2.1,0.7,2239920
+Kabengele,Mfiondu,Boston Celtics,C,82,250.0,1.5,2.5,0.0,1701593
+Kaminsky,Frank,Houston Rockets,F-C,84,240.0,2.5,1.4,0.9,1836090
+Kennard,Luke,Memphis Grizzlies,G,77,206.0,9.3,2.7,1.5,14415545
+Kessler,Walker,Utah Jazz,C,84,245.0,9.2,8.4,0.9,2696400
+Kispert,Corey,Washington Wizards,F,78,224.0,11.1,2.8,1.2,3552960
+Kleber,Maxi,Dallas Mavericks,F,82,240.0,5.9,3.6,1.4,9000000
+Knight,Nathan,Minnesota Timberwolves,F-C,80,253.0,3.7,1.5,0.3,1836090
+Knox II,Kevin,Portland Trail Blazers,F,79,215.0,6.6,2.8,0.5,5845979
+Koloko,Christian,Toronto Raptors,C,84,230.0,3.1,2.9,0.5,1500000
+Konchar,John,Memphis Grizzlies,G,77,210.0,5.1,4.3,1.4,2300000
+Korkmaz,Furkan,Philadelphia 76ers,G-F,79,202.0,3.8,1.1,0.6,5000000
+Kornet,Luke,Boston Celtics,C-F,86,250.0,3.8,2.9,0.8,2133278
+Krejci,Vit,Atlanta Hawks,G,80,195.0,1.2,0.9,0.6,1563518
+Kuminga,Jonathan,Golden State Warriors,F,79,225.0,9.9,3.4,1.9,5739860
+Kuzma,Kyle,Washington Wizards,F,81,221.0,21.2,7.2,3.7,13000000
+LaRavia,Jake,Memphis Grizzlies,F,79,235.0,3.0,1.8,0.6,3047640
+LaVine,Zach,Chicago Bulls,G,77,200.0,24.8,4.5,4.2,37096500
+Lamb,Anthony,Golden State Warriors,F,78,227.0,6.7,3.5,1.5,253254
+Landale,Jock,Phoenix Suns,C,83,255.0,6.6,4.1,1.0,1563518
+Langford,Romeo,San Antonio Spurs,G-F,77,216.0,6.9,2.7,1.2,5634257
+LeVert,Caris,Cleveland Cavaliers,G,78,205.0,12.1,3.8,3.9,18796296
+Lee,Damion,Phoenix Suns,G-F,77,210.0,8.2,3.0,1.3,1836090
+Lee,Saben,Philadelphia 76ers,G,74,183.0,6.0,1.8,2.7,1752638
+Len,Alex,Sacramento Kings,C,86,250.0,1.7,2.3,0.5,3918000
+Leonard,Kawhi,LA Clippers,F,79,225.0,23.8,6.5,3.9,42492492
+Leonard,Meyers,Milwaukee Bucks,F-C,84,260.0,4.8,3.8,0.1,284911
+Lewis Jr.,Kira,New Orleans Pelicans,G,73,170.0,4.6,1.3,0.9,4004280
+Lillard,Damian,Portland Trail Blazers,G,74,195.0,32.2,4.8,7.3,42492492
+Little,Nassir,Portland Trail Blazers,F-G,77,220.0,6.6,2.6,0.9,4171548
+Livers,Isaiah,Detroit Pistons,F,78,232.0,6.7,2.8,0.8,1563518
+Lofton Jr.,Kenneth,Memphis Grizzlies,F,78,275.0,5.0,2.1,0.8,1000000
+Looney,Kevon,Golden State Warriors,F,81,222.0,7.0,9.3,2.5,8000000
+Lopez,Brook,Milwaukee Bucks,C,85,282.0,15.9,6.7,1.3,13906976
+Lopez,Robin,Cleveland Cavaliers,C,84,281.0,3.0,1.4,0.5,1836090
+Love,Kevin,Miami Heat,F-C,80,251.0,8.2,6.4,1.9,3114138
+Lowry,Kyle,Miami Heat,G,72,196.0,11.2,4.1,5.1,28333334
+Lyles,Trey,Sacramento Kings,F,81,234.0,7.6,4.1,0.9,2700000
+Maledon,Theo,Charlotte Hornets,G,77,175.0,6.7,2.8,3.5,1900000
+Mamukelashvili,Sandro,San Antonio Spurs,F-C,82,240.0,6.1,4.3,1.4,357717
+Mann,Terance,LA Clippers,G-F,77,215.0,8.8,3.4,2.3,1930681
+Mann,Tre,Oklahoma City Thunder,G,75,178.0,7.7,2.3,1.8,3046200
+Marjanovic,Boban,Houston Rockets,C,88,290.0,3.3,1.9,0.3,601478
+Markkanen,Lauri,Utah Jazz,F-C,84,240.0,25.6,8.6,1.9,16475454
+Marshall,Naji,New Orleans Pelicans,F,79,220.0,9.1,3.6,2.5,1782621
+Martin,Caleb,Miami Heat,F,77,205.0,9.6,4.8,1.6,6479000
+Martin,Cody,Charlotte Hornets,F,78,205.0,5.0,3.4,1.6,7000000
+Martin,Tyrese,Atlanta Hawks,G,78,215.0,1.3,0.8,0.1,1017781
+Martin Jr.,Kenyon,Houston Rockets,F,79,215.0,12.7,5.5,1.5,1782621
+Mathews,Garrison,Atlanta Hawks,G,78,215.0,4.8,1.4,0.5,2000000
+Mathurin,Bennedict,Indiana Pacers,G-F,77,210.0,16.7,4.1,1.5,6586800
+Matthews,Wesley,Milwaukee Bucks,G,77,220.0,3.4,2.2,0.7,1836090
+Maxey,Tyrese,Philadelphia 76ers,G,74,200.0,20.3,2.9,3.5,2726880
+McBride,Miles,New York Knicks,G,74,195.0,3.5,0.8,1.1,1563518
+McCollum,CJ,New Orleans Pelicans,G,75,190.0,20.9,4.4,5.7,33333333
+McConnell,T.J.,Indiana Pacers,G,73,190.0,8.7,3.1,5.3,8100000
+McDaniels,Jaden,Minnesota Timberwolves,F,81,185.0,12.1,3.9,1.9,2161440
+McDaniels,Jalen,Philadelphia 76ers,F-C,81,205.0,9.4,4.3,1.6,1930681
+McDermott,Doug,San Antonio Spurs,F,78,225.0,10.2,2.2,1.4,13750000
+McGee,JaVale,Dallas Mavericks,C-F,84,270.0,4.4,2.5,0.3,5461219
+McGowens,Bryce,Charlotte Hornets,G,78,175.0,5.3,2.0,1.2,1075000
+McGruder,Rodney,Detroit Pistons,G,76,205.0,5.7,2.3,0.9,1836090
+McLaughlin,Jordan,Minnesota Timberwolves,G,72,185.0,3.7,1.4,3.4,2160000
+Melton,De'Anthony,Philadelphia 76ers,G,74,200.0,10.1,4.1,2.6,8250000
+Merrill,Sam,Cleveland Cavaliers,G,76,205.0,5.0,1.8,1.0,850000
+Metu,Chimezie,Sacramento Kings,F-C,81,225.0,4.9,3.0,0.6,1910680
+Middleton,Khris,Milwaukee Bucks,F,79,222.0,15.1,4.2,4.9,37948276
+Mills,Patty,Brooklyn Nets,G,72,180.0,6.2,1.1,1.4,6479000
+Milton,Shake,Philadelphia 76ers,G-F,77,205.0,8.4,2.5,3.2,1977718
+Minott,Josh,Minnesota Timberwolves,F,80,205.0,3.1,1.7,0.3,1017781
+Mitchell,Davion,Sacramento Kings,G,72,202.0,5.6,1.3,2.3,4833600
+Mitchell,Donovan,Cleveland Cavaliers,G,73,215.0,28.3,4.3,4.4,30913750
+Mobley,Evan,Cleveland Cavaliers,C,83,215.0,16.2,9.0,2.8,8478720
+Monk,Malik,Sacramento Kings,G,75,200.0,13.5,2.6,3.9,9472219
+Moody,Moses,Golden State Warriors,G,77,211.0,4.8,1.7,0.8,3562200
+Moore Jr.,Wendell,Minnesota Timberwolves,G,77,215.0,1.4,0.6,0.6,2306520
+Morant,Ja,Memphis Grizzlies,G,74,174.0,26.2,5.9,8.1,9603360
+Morris,Markieff,Dallas Mavericks,F,81,245.0,3.8,2.0,0.9,1836090
+Morris,Monte,Washington Wizards,G,74,183.0,10.3,3.4,5.3,9125000
+Morris Sr.,Marcus,LA Clippers,F,80,218.0,11.2,4.0,1.8,16372093
+Murphy III,Trey,New Orleans Pelicans,F,80,206.0,14.5,3.6,1.4,3206640
+Murray,Dejounte,Atlanta Hawks,G,77,180.0,20.5,5.3,6.1,16571120
+Murray,Jamal,Denver Nuggets,G,76,215.0,20.0,4.0,6.2,31650000
+Murray,Keegan,Sacramento Kings,F,80,225.0,12.2,4.6,1.2,8008440
+Muscala,Mike,Boston Celtics,F-C,83,240.0,6.1,3.2,0.8,3500000
+Mykhailiuk,Svi,Charlotte Hornets,G-F,79,205.0,6.9,1.7,1.7,1836090
+Nance Jr.,Larry,New Orleans Pelicans,F-C,80,245.0,6.8,5.4,1.8,9672727
+Nembhard,Andrew,Indiana Pacers,G-F,75,191.0,9.5,2.7,4.5,2244111
+Nesmith,Aaron,Indiana Pacers,G-F,77,215.0,10.1,3.8,1.3,3804360
+Neto,Raul,Cleveland Cavaliers,G,74,180.0,3.3,1.0,1.6,1836090
+Niang,Georges,Philadelphia 76ers,F,79,230.0,8.2,2.4,1.0,3465000
+Nix,Daishen,Houston Rockets,G,76,226.0,4.0,1.7,2.3,1563518
+Nnaji,Zeke,Denver Nuggets,F-C,81,240.0,5.2,2.6,0.3,2498760
+Nowell,Jaylen,Minnesota Timberwolves,G,76,201.0,10.8,2.6,2.0,1930681
+Ntilikina,Frank,Dallas Mavericks,G,76,200.0,2.9,1.3,1.2,2036318
+Nunn,Kendrick,Washington Wizards,G,75,190.0,7.1,1.6,1.3,5250000
+Nurkic,Jusuf,Portland Trail Blazers,C,84,290.0,13.3,9.1,2.9,15625000
+Nwora,Jordan,Indiana Pacers,F,81,225.0,8.7,3.7,1.4,3000000
+O'Neale,Royce,Brooklyn Nets,F,78,226.0,8.8,5.1,3.7,9200000
+Okeke,Chuma,Orlando Magic,F,80,229.0,4.7,3.6,1.4,3433320
+Okogie,Josh,Phoenix Suns,G,76,213.0,7.3,3.5,1.5,1836090
+Okongwu,Onyeka,Atlanta Hawks,F-C,81,240.0,9.9,7.2,1.0,6395160
+Okoro,Isaac,Cleveland Cavaliers,F-G,77,225.0,6.4,2.5,1.1,7040880
+Oladipo,Victor,Miami Heat,G,75,213.0,10.7,3.0,3.5,8750000
+Olynyk,Kelly,Utah Jazz,F-C,83,240.0,12.5,6.2,3.7,12195122
+Omoruyi,Eugene,Detroit Pistons,F,78,235.0,7.0,2.8,0.7,555402
+Osman,Cedi,Cleveland Cavaliers,F,79,230.0,8.7,2.3,1.5,7426088
+Oubre Jr.,Kelly,Charlotte Hornets,F-G,78,203.0,20.3,5.2,1.1,12600000
+Paul,Chris,Phoenix Suns,G,72,175.0,13.9,4.3,8.9,28400000
+Payne,Cameron,Phoenix Suns,G,73,183.0,10.3,2.2,4.5,6000000
+Payton II,Gary,Golden State Warriors,G,74,195.0,4.6,3.1,1.4,8300000
+Pinson,Theo,Dallas Mavericks,G-F,79,212.0,2.4,1.6,1.2,1836090
+Plumlee,Mason,LA Clippers,F-C,84,254.0,10.8,8.9,3.1,9080417
+Poeltl,Jakob,Toronto Raptors,C,85,245.0,12.5,9.1,2.7,9398148
+Pokusevski,Aleksej,Oklahoma City Thunder,F,84,210.0,8.1,4.7,1.9,3261480
+Poole,Jordan,Golden State Warriors,G,76,194.0,20.4,2.7,4.5,3901399
+Porter Jr.,Kevin,Houston Rockets,G-F,76,203.0,19.2,5.3,5.7,3217631
+Porter Jr.,Michael,Denver Nuggets,F,82,218.0,17.4,5.5,1.0,30913750
+Porter Jr.,Otto,Toronto Raptors,F,80,198.0,5.5,2.4,1.0,6000000
+Portis,Bobby,Milwaukee Bucks,F,83,250.0,14.1,9.6,1.5,10843350
+Porzingis,Kristaps,Washington Wizards,F-C,87,240.0,23.2,8.4,2.7,33833400
+Powell,Dwight,Dallas Mavericks,F-C,82,240.0,6.7,4.1,0.9,11080125
+Powell,Norman,LA Clippers,G,76,215.0,17.0,2.9,1.8,16758621
+Preston,Jason,LA Clippers,G,75,181.0,2.9,1.6,1.9,1563518
+Prince,Taurean,Minnesota Timberwolves,F,78,218.0,9.1,2.4,1.6,8000000
+Pritchard,Payton,Boston Celtics,G,73,195.0,5.6,1.8,1.3,2239200
+Quickley,Immanuel,New York Knicks,G,74,190.0,14.9,4.2,3.4,2316240
+Randle,Julius,New York Knicks,F-C,80,250.0,25.1,10.0,4.1,23760000
+Reaves,Austin,Los Angeles Lakers,G,77,197.0,13.0,3.0,3.4,1563518
+Reddish,Cam,Portland Trail Blazers,F-G,79,217.0,9.7,2.2,1.4,5954454
+Reed,Paul,Philadelphia 76ers,F,81,210.0,4.2,3.8,0.4,1782621
+Reid,Naz,Minnesota Timberwolves,C-F,81,264.0,11.5,4.9,1.1,1930681
+Richards,Nick,Charlotte Hornets,C,84,245.0,8.2,6.4,0.6,1782621
+Richardson,Josh,New Orleans Pelicans,G,78,200.0,10.1,2.7,2.7,11615328
+Rivers,Austin,Minnesota Timberwolves,G,76,200.0,4.9,1.6,1.4,1836090
+Robinson,Duncan,Miami Heat,F,79,215.0,6.4,1.6,1.1,16902000
+Robinson,Mitchell,New York Knicks,C-F,84,240.0,7.4,9.4,0.9,17045454
+Robinson-Earl,Jeremiah,Oklahoma City Thunder,F,80,240.0,6.8,4.2,1.0,2000000
+Roby,Isaiah,San Antonio Spurs,F,80,230.0,4.1,2.5,0.9,400000
+Roddy,David,Memphis Grizzlies,F,76,255.0,6.7,2.8,0.8,2588640
+Rollins,Ryan,Golden State Warriors,G,75,180.0,1.9,1.0,0.5,1017781
+Rose,Derrick,New York Knicks,G,75,200.0,5.6,1.5,1.7,14520730
+Ross,Terrence,Phoenix Suns,G-F,79,206.0,8.3,2.4,1.5,580373
+Rozier,Terry,Charlotte Hornets,G,73,190.0,21.1,4.1,5.1,21486283
+Rubio,Ricky,Cleveland Cavaliers,G,74,190.0,5.2,2.1,3.5,5853659
+Russell,D'Angelo,Los Angeles Lakers,G,76,193.0,17.8,3.0,6.2,31377750
+Ryan,Matt,Minnesota Timberwolves,F,78,215.0,3.6,0.8,0.5,1836090
+Sabonis,Domantas,Sacramento Kings,F-C,85,240.0,19.1,12.3,7.3,18500000
+Samanic,Luka,Utah Jazz,F,82,227.0,9.9,4.3,2.1,2959080
+Saric,Dario,Oklahoma City Thunder,F-C,82,225.0,6.4,3.6,1.3,9240000
+Schofield,Admiral,Orlando Magic,F,77,241.0,4.2,1.7,0.8,516508
+Schroder,Dennis,Los Angeles Lakers,G,73,172.0,12.4,2.5,4.4,1836090
+Sengun,Alperen,Houston Rockets,C,83,243.0,14.8,9.0,3.9,3375480
+Sexton,Collin,Utah Jazz,G,74,190.0,14.3,2.2,2.9,16500000
+Shamet,Landry,Phoenix Suns,G,76,190.0,8.7,1.7,2.3,9500000
+Sharpe,Day'Ron,Brooklyn Nets,C,81,265.0,4.7,4.2,0.8,2109480
+Sharpe,Shaedon,Portland Trail Blazers,G,77,200.0,9.9,3.0,1.2,6012960
+Siakam,Pascal,Toronto Raptors,F,80,230.0,24.2,7.8,5.8,35448672
+Simmons,Ben,Brooklyn Nets,G-F,82,240.0,6.9,6.3,6.1,35448672
+Simmons,Kobi,Charlotte Hornets,G,77,180.0,1.0,0.8,1.0,32795
+Simonovic,Marko,Chicago Bulls,C,84,220.0,0.9,0.3,0.0,1563518
+Simons,Anfernee,Portland Trail Blazers,G,75,181.0,21.1,2.6,4.1,22321429
+Sims,Jericho,New York Knicks,C,82,250.0,3.4,4.7,0.5,1639842
+Smart,Marcus,Boston Celtics,G,76,220.0,11.5,3.1,6.3,17207141
+Smith,Ish,Denver Nuggets,G,72,175.0,2.5,1.3,2.3,4750000
+Smith,Jalen,Indiana Pacers,F-C,81,215.0,9.4,5.8,1.0,4670160
+Smith Jr.,Dennis,Charlotte Hornets,G,74,205.0,8.8,3.1,4.8,1836090
+Smith Jr.,Jabari,Houston Rockets,F,83,220.0,12.8,7.2,1.3,8882640
+Sneed,Xavier,Charlotte Hornets,F,77,215.0,4.3,1.3,1.3,8558
+Sochan,Jeremy,San Antonio Spurs,F,80,230.0,11.0,5.3,2.5,5063520
+Springer,Jaden,Philadelphia 76ers,G,76,202.0,2.6,0.9,0.5,2125200
+Stevens,Lamar,Cleveland Cavaliers,F,78,230.0,5.3,3.3,0.5,1782621
+Stewart,Isaiah,Detroit Pistons,F-C,80,250.0,11.3,8.1,1.4,3433320
+Strus,Max,Miami Heat,G-F,77,215.0,11.5,3.2,2.1,1815677
+Suggs,Jalen,Orlando Magic,G,77,205.0,9.9,3.0,2.9,6922320
+Sumner,Edmond,Brooklyn Nets,G,76,196.0,7.1,1.5,1.3,1968175
+Tate,Jae'Sean,Houston Rockets,F,77,230.0,9.1,3.8,2.7,7065217
+Tatum,Jayson,Boston Celtics,F-G,80,210.0,30.1,8.8,4.6,28103500
+Taylor,Terry,Chicago Bulls,F,76,230.0,2.9,1.5,0.3,1563518
+Temple,Garrett,New Orleans Pelicans,G-F,78,195.0,2.0,0.7,0.5,4910000
+Terry,Dalen,Chicago Bulls,F,79,195.0,2.2,1.0,0.6,3191400
+Theis,Daniel,Indiana Pacers,F-C,80,245.0,7.0,3.1,1.3,8694369
+Thomas,Cam,Brooklyn Nets,G,75,210.0,10.6,1.7,1.4,2138160
+Thompson,Klay,Golden State Warriors,G,78,220.0,21.9,4.1,2.4,40600080
+Thompson,Tristan,Los Angeles Lakers,C-F,81,254.0,9.0,8.4,1.0,10552
+Thor,JT,Charlotte Hornets,F,81,203.0,3.8,2.2,0.5,1563518
+Thybulle,Matisse,Portland Trail Blazers,G-F,77,201.0,4.1,2.0,0.7,4379527
+Tillman,Xavier,Memphis Grizzlies,F,79,245.0,7.0,5.0,1.6,1901625
+Todd,Isaiah,Washington Wizards,F,81,219.0,1.5,2.0,0.7,1575000
+Toppin,Obi,New York Knicks,F,81,220.0,7.4,2.8,1.0,5348280
+Toscano-Anderson,Juan,Utah Jazz,F,78,209.0,3.0,2.4,1.3,1836090
+Towns,Karl-Anthony,Minnesota Timberwolves,C-F,84,248.0,20.8,8.1,4.8,33833400
+Trent Jr.,Gary,Toronto Raptors,G-F,77,209.0,17.4,2.6,1.6,17505000
+Tucker,P.J.,Philadelphia 76ers,F,77,245.0,3.5,3.9,0.8,10490000
+Turner,Myles,Indiana Pacers,C-F,83,250.0,18.0,7.5,1.4,35096500
+Valanciunas,Jonas,New Orleans Pelicans,C,83,265.0,14.1,10.2,1.8,14700000
+VanVleet,Fred,Toronto Raptors,G,72,197.0,19.3,4.1,7.2,21250000
+Vanderbilt,Jarred,Los Angeles Lakers,F,80,214.0,7.9,7.5,2.4,4374000
+Vassell,Devin,San Antonio Spurs,G-F,77,200.0,18.5,3.9,3.6,4437000
+Vincent,Gabe,Miami Heat,G,74,200.0,9.4,2.1,2.5,1815677
+Vucevic,Nikola,Chicago Bulls,C,82,260.0,17.6,11.0,3.2,22000000
+Wade,Dean,Cleveland Cavaliers,F-C,81,228.0,4.7,3.4,0.8,1930681
+Wagner,Franz,Orlando Magic,F,82,220.0,18.6,4.1,3.5,5258280
+Wagner,Moritz,Orlando Magic,F-C,83,245.0,10.5,4.5,1.5,1878720
+Wainright,Ish,Phoenix Suns,F,77,250.0,4.2,2.3,0.9,474851
+Walker,Jabari,Portland Trail Blazers,F,79,200.0,3.9,2.3,0.6,1017781
+Walker IV,Lonnie,Los Angeles Lakers,G-F,76,204.0,11.7,1.9,1.1,6479000
+Warren,T.J.,Phoenix Suns,F,80,220.0,7.5,2.9,1.0,1836090
+Washington,P.J.,Charlotte Hornets,F,79,230.0,15.7,4.9,2.4,5808435
+Washington Jr.,Duane,Phoenix Suns,G,74,197.0,7.9,1.2,2.0,1563518
+Washington Jr.,TyTy,Houston Rockets,G,75,195.0,4.7,1.5,1.5,2210040
+Watanabe,Yuta,Brooklyn Nets,G-F,80,215.0,5.6,2.4,0.8,1762796
+Waters III,Lindy,Oklahoma City Thunder,F,78,210.0,5.2,1.8,0.7,1927896
+Watford,Trendon,Portland Trail Blazers,F,80,237.0,7.4,3.8,2.1,1563518
+Watson,Peyton,Denver Nuggets,G,79,200.0,3.3,1.6,0.5,2193960
+Wesley,Blake,San Antonio Spurs,G,76,185.0,5.0,2.2,2.6,2385480
+Westbrook,Russell,LA Clippers,G,75,200.0,15.9,5.8,7.5,495955
+White,Coby,Chicago Bulls,G,77,195.0,9.7,2.9,2.8,7413955
+White,Derrick,Boston Celtics,G,76,190.0,12.4,3.6,3.9,16892857
+Wieskamp,Joe,Toronto Raptors,G-F,78,205.0,1.0,0.4,0.3,554989
+Wiggins,Aaron,Oklahoma City Thunder,G,77,190.0,6.8,3.0,1.1,1563518
+Wiggins,Andrew,Golden State Warriors,F,79,197.0,17.1,5.0,2.3,33616770
+Williams,Grant,Boston Celtics,F,78,236.0,8.1,4.6,1.7,4306281
+Williams,Jalen,Oklahoma City Thunder,G-F,77,211.0,14.1,4.5,3.3,4341480
+Williams,Jaylin,Oklahoma City Thunder,F,81,240.0,5.9,4.9,1.6,2000000
+Williams,Jeenathan,Portland Trail Blazers,G,77,205.0,10.6,3.0,2.0,52644
+Williams,Kenrich,Oklahoma City Thunder,G-F,78,210.0,8.0,4.9,2.0,2000000
+Williams,Mark,Charlotte Hornets,C,84,240.0,9.0,7.1,0.4,3722040
+Williams,Patrick,Chicago Bulls,F,79,215.0,10.2,4.0,1.2,7775400
+Williams,Ziaire,Memphis Grizzlies,F,81,185.0,5.7,2.1,0.9,4591680
+Williams III,Robert,Boston Celtics,C-F,81,237.0,8.0,8.3,1.4,10937502
+Williamson,Zion,New Orleans Pelicans,F,78,284.0,26.0,7.0,4.6,13534817
+Windler,Dylan,Cleveland Cavaliers,G-F,79,196.0,1.7,0.0,0.3,4037278
+Winslow,Justise,Portland Trail Blazers,F-G,78,222.0,6.8,5.0,3.4,4097561
+Wiseman,James,Detroit Pistons,C,84,240.0,10.0,5.9,0.7,9603360
+Wood,Christian,Dallas Mavericks,F,81,214.0,16.6,7.3,1.8,14317460
+Wright,Delon,Washington Wizards,G,77,185.0,7.4,3.6,3.9,7804878
+Young,Thaddeus,Toronto Raptors,F,80,235.0,4.4,3.1,1.4,8000000
+Young,Trae,Atlanta Hawks,G,73,164.0,26.2,3.0,10.2,37095000
+Yurtseven,Omer,Miami Heat,C,83,275.0,4.4,2.6,0.2,1752638
+Zeller,Cody,Miami Heat,F-C,83,240.0,6.5,4.3,0.7,517060
+Zubac,Ivica,LA Clippers,C,84,240.0,10.8,9.9,1.0,10123457
