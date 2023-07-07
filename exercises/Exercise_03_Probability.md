@@ -14,30 +14,32 @@
 	c. What is the probability of a person getting a positive result? (Hint: Add the probabilities from the previous two questions)  
 	d. If you get tested and get a positive result, what is the probability that you have the disease? (Hint: Use Bayes' Theorem) 
 
-### Part 2:  Binomial Distribution
+### Part 2: Independence or Dependence of Variables
+1. Let x be the event that it rains today and y be the event that it rained yesterday. Do you think that x and y are independent or dependent?
+2. Use the data contained in the bna_rain.csv to evaluate your guess. Read this data into a DataFrame named `bna_rain`. The `rained_today` column indicates whether there was any precipitation on a given day and the `rained_yesterday` column indicates whether there was any precipitation the day before. **Hint:** If you want to filter the DataFrame down to the rows for days where it rained yesterday, you can use .loc: `bna_rain.loc[bna_rain['rained_yesterday']]`.
+3. Let x be the event that it rains today and y be the event that it is Saturday. Do you think that x and y are independent or dependent? 
+4. Use the data contained in the bna_rain.csv to evaluate your guess. You'll need to use the weekday, which is contained in the `day_of_week` column. **Hint:** If you want to filter the DataFrame down to the rows for Saturday, you can use .loc: `bna_rain.loc[bna_rain['day_of_week'] == 'Saturday']`.
+
+### Part 3:  Binomial Distribution
 According to Forbes [(https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10)](https://www.forbes.com/sites/zackfriedman/2019/01/11/live-paycheck-to-paycheck-government-shutdown/#4693b2194f10), 78% of American workers live paycheck-to-paycheck.
 
 1. You take a random sample of 10 American workers.  
 	a. What is the probability that between 6 and 9 people (inclusive) in your sample are living paycheck-to-paycheck?  
 	b. What is the probability that at least 9 people in your sample are living paycheck-to-paycheck?  
-	c. What is the probability that fewer that 75% of people in your sample are living paycheck-to-paycheck?  
+	c. What is the probability that fewer that 70% of people in your sample are living paycheck-to-paycheck?  
 	d. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
 
-2. You take a random sample of 25 American workers.  
-	a. What is the probability that fewer than 75% of people in your sample are living paycheck-to-paycheck?  
+2. You take a random sample of 100 American workers.  
+	a. What is the probability that fewer than 70% of people in your sample are living paycheck-to-paycheck?  
 	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
 
-3. You take a random sample of 100 American workers.  
-	a. What is the probability that fewer than 75% of people in your sample are living paycheck-to-paycheck?  
+3. You take a random sample of 1000 American workers.  
+	a. What is the probability that fewer than 70% of people in your sample are living paycheck-to-paycheck?  
 	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
 
-4. You take a random sample of 1000 American workers.  
-	a. What is the probability that fewer than 75% of people in your sample are living paycheck-to-paycheck?  
-	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+4. What do you notice happens as the size of your sample increases?
 
-5. What do you notice happens as the size of your sample increases?
-
-### Part 3: The Newton Problem 
+### Part 4: The Newton Problem 
 Now, you will attempt to outdo Isaac Newton. See this video by Vsauce 2 for an entertaining description and analysis of the problem: [https://www.youtube.com/watch?v=RFlTawWwLZc](https://www.youtube.com/watch?v=RFlTawWwLZc). As described in the video, this is a problem which Isaac Newton got wrong. More precisely, he got the correct calculations, but his explanation was off. To be fair to Newton, the machinery of probability theory had not been developed yet in his time.
 
 Use the binomial distribution to answer this question.
@@ -46,14 +48,14 @@ Which of the following three propositions has the greatest chance of success?
 	b. Twelve fair dice are tossed independently and at least two “6”s appear.    
 	c. Eighteen fair dice are tossed independently and at least three “6”s appear.  
 
-### Part 4: Binomial Distribution - Conceptual
+### Part 5: Binomial Distribution - Conceptual
 1. Using what you know about the variance of a binomial random variable, which situation do you think would require a larger sample size to accurately estimate? Why?  
 	a. The proportion of voters who will vote for candidate A in an upcoming election, where you know that it is a close race between candidate A and candidate B.  
 	b. The proportion of people who will click on an ad on your company's website, when you know that historically, the proportion of people clicking on ads is very low (< 2%).
 
 2. The binomial distribution gives the probability of a particular number of successes. If instead of counting the total number of successes, you were looking at the _proportion_ of successes (total number of successes / number of trials), what happens to the variance as the number of trials increases (keeping the probability of success fixed)?
 
-### Part 5: The Normal Distribution
+### Part 6: The Normal Distribution
 1. Using a standard normal distribution (mean 0, standard deviation 1), answer the following questions.  
 	a. What percentage of outcomes are within one standard deviation of the mean?  
 	b. What percentage of outcomes are within two standard deviations of the mean?  
