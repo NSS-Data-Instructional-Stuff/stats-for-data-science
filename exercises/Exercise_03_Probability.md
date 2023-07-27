@@ -26,16 +26,16 @@ According to Forbes [(https://www.forbes.com/sites/zackfriedman/2019/01/11/live-
 1. You take a random sample of 10 American workers.  
 	a. What is the probability that between 6 and 9 people (inclusive) in your sample are living paycheck-to-paycheck?  
 	b. What is the probability that at least 9 people in your sample are living paycheck-to-paycheck?  
-	c. What is the probability that fewer that 70% of people in your sample are living paycheck-to-paycheck?  
-	d. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+	c. What is the probability that 70% or fewer of people in your sample are living paycheck-to-paycheck?  
+	d. What is the probability that 50% or fewer of people in your sample are living paycheck-to-paycheck?
 
 2. You take a random sample of 100 American workers.  
-	a. What is the probability that fewer than 70% of people in your sample are living paycheck-to-paycheck?  
-	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+	a. What is the probability that 70% or fewer of people in your sample are living paycheck-to-paycheck?  
+	b. What is the probability that 50% or fewer of people in your sample are living paycheck-to-paycheck?
 
 3. You take a random sample of 1000 American workers.  
-	a. What is the probability that fewer than 70% of people in your sample are living paycheck-to-paycheck?  
-	b. What is the probability that fewer than 50% of people in your sample are living paycheck-to-paycheck?
+	a. What is the probability that 70% or fewer of people in your sample are living paycheck-to-paycheck?  
+	b. What is the probability that 50% or fewer of people in your sample are living paycheck-to-paycheck?
 
 4. What do you notice happens as the size of your sample increases?
 
