@@ -15,7 +15,7 @@ You suspect that the average pulse rate for men between the ages of 30 and 40 is
 
 4. What p-value did you get?
 
-5. State your conclusion.
+5. State your conclusion at the 0.05 significance level.
 
 ### Part 2: Russia Constitutional Referendum
 
@@ -45,9 +45,9 @@ penguins = penguins[penguins['species'].isin(['Adelie', 'Chinstrap'])]
 ```
 a. Take a look at the distribution of body mass for these two species. What do you notice?
 
-b. Test the hypothesis that the distribution of body masses is different for these two species. What conclusion do you reach?
+b. Test the hypothesis that the distribution of body masses is different for these two species. What conclusion do you reach? Use the 0.05 significance level.
 
-c. Now, instead of using the difference in means, test whether there is a difference in standard deviations between the two species (Hint: You'll need to run a permutation test for this.) What conclusion do you reach now?
+c. Now, instead of using the difference in means, test whether there is a difference in the standard deviation of body mass between the two species (Hint: You'll need to run a permutation test for this.) What conclusion do you reach now? Use the 0.05 significance level.
 
 
 ### Part 4: Tests for Dependence
